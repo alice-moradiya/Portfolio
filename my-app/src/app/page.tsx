@@ -8,10 +8,13 @@ import React from 'react';
 import { WavyBackground } from '@/app/utils/components/ui/wavy-background'; // using the @ alias
 import Link from 'next/link';
 import Layout from '../app/layout'
+import Header from './header'
+
 
 const Page = () => {
   return (
     <SSRProvider>
+      <Header />
       <WavyBackground>
       <Layout> </Layout>
       </WavyBackground>

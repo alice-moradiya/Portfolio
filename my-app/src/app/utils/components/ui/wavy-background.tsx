@@ -46,6 +46,8 @@ export const WavyBackground = ({
     }
   };
 
+  
+
   const init = () => {
     canvas = canvasRef.current;
     ctx = canvas.getContext("2d");
@@ -108,6 +110,24 @@ export const WavyBackground = ({
         !navigator.userAgent.includes("Chrome")
     );
   }, []);
+
+  <canvas
+  className="absolute inset-0"
+  ref={canvasRef}
+  id="canvas"
+  style={{
+    zIndex: -1, // Ensure the canvas is behind everything else
+    ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
+    top: '50px',
+  }}
+></canvas>
+
+window.onresize = function () {
+  w = ctx.canvas.width = window.innerWidth;
+  h = ctx.canvas.height = window.innerHeight - 50; // Subtract the navbar height
+  canvas.style.top = '50px'; // Ensure canvas top is set after resizing
+  ctx.filter = `blur(${blur}px)`;
+};
 
   return (
     <div
