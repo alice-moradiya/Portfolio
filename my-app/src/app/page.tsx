@@ -7,18 +7,16 @@ import SSRProvider from 'react-bootstrap/SSRProvider';
 import React from 'react';
 import { WavyBackground } from '@/app/utils/components/ui/wavy-background'; // using the @ alias
 import Link from 'next/link';
-import Layout from '../app/layout.js'
+import Layout from '../app/layout'
 
 const Page = () => {
   return (
-  <SSRProvider>
-  <WavyBackground>
-    <Layout>  </Layout>
-    <h1 className='text-danger'>Hello Bootstrap</h1>
-   
-  </WavyBackground>
-  </SSRProvider>
-  );
+    <SSRProvider>
+      <WavyBackground>
+      <Layout> </Layout>
+      </WavyBackground>
+    </SSRProvider>
+      );
 };
 
 export default Page;
