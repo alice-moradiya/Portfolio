@@ -46,7 +46,7 @@ export const WavyBackground = ({
     }
   };
 
-  
+
 
   const init = () => {
     canvas = canvasRef.current;

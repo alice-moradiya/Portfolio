@@ -2,21 +2,20 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logoImage from './logo.jpeg'; 
+
 
 
 const Header = () => {
     return (
-      <Navbar fixed="top" id="Nav" bg="light" data-bs-theme="light">
+      <Navbar fixed="top" id="Nav" >
         <Container>
-          <Navbar.Brand href="#home"> <img
-            src={logoImage}
+          <Navbar.Brand href="#home"> <img src="/logo.png" 
             width="90" // Setting the width of image
-            height="30" // Setting the height of image
+            height="35" // Setting the height of image
             className="d-inline-block align-top" // Bootstrap classes for alignment
             alt="Logo"
           /></Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav Id= "text" className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
             <Nav.Link href="#">Education</Nav.Link>
