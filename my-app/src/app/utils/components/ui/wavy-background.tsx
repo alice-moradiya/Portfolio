@@ -2,6 +2,7 @@
 import { cn } from "@/app/utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
+import '../../../../app/globals.css';
 
 export const WavyBackground = ({
   children,
@@ -46,7 +47,25 @@ export const WavyBackground = ({
     }
   };
 
-
+  const WavyBackground = () => {
+    useEffect(() => {
+      // Your resize logic here, it will now only run on the client
+      const handleResize = () => {
+        // Your resize logic
+      };
+  
+      // Set up the event listener
+      window.addEventListener('resize', handleResize);
+  
+      // Call the handler right away so state gets updated with initial window size
+      handleResize();
+  
+      // Remove event listener on cleanup
+      return () => window.removeEventListener('resize', handleResize);
+    }, []); // Empty array ensures effect runs only on mount and unmount
+  
+    // Your component code here...
+  };
 
   const init = () => {
     canvas = canvasRef.current;
@@ -131,7 +150,7 @@ window.onresize = function () {
 
   return (
     <div
-      className={cn(
+    id="wavy-background-fixed" className={cn(
         "h-screen flex flex-col items-center justify-center",
         containerClassName
       )}

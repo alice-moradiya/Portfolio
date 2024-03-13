@@ -9,15 +9,18 @@ import { WavyBackground } from '@/app/utils/components/ui/wavy-background'; // u
 import Link from 'next/link';
 import Layout from '../app/layout'
 import Header from './header'
+import Home from './home.js'
+import HomePageContent from './home'; // Assuming home.js exports HomePageContent
 
 
 const Page = () => {
   return (
     <SSRProvider>
       <Header />
-      <WavyBackground>
-      <Layout> </Layout>
-      </WavyBackground>
+      <WavyBackground />
+      <HomePageContent />
+     
+
     </SSRProvider>
       );
 };

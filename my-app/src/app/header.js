@@ -15,7 +15,7 @@ const Header = () => {
             className="d-inline-block align-top" // Bootstrap classes for alignment
             alt="Logo"
           /></Navbar.Brand>
-          <Nav Id= "text" className="me-auto">
+          <Nav id= "text" className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#">About</Nav.Link>
             <Nav.Link href="#">Education</Nav.Link>
