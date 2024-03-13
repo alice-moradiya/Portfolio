@@ -96,7 +96,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 3em;
+  font-size: 4.5em;
 }
 
 .home-content h2 {
@@ -105,9 +105,10 @@ body {
 }
 
 .home-content p {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #ffffff; /* Adjust color as needed */
-  margin-top: 20px;
+  margin-top: 0.5em; /* Reduces space above the paragraph */
+  margin-bottom: 0.5em;
 }
 
 .home-content button {
