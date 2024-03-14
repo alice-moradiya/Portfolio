@@ -1,7 +1,7 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -14,7 +14,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-} */
+}
 
 /* body {
   color: rgb(var(--foreground-rgb));
@@ -113,17 +113,18 @@ body {
 }
 
 .home-content button {
-  background-color: #f8f7f7; /* Example of a bold color for the button */
-  border: none;
-  padding: 1em 2em;
-  color: rgb(5, 5, 5);
-  font-weight: bold;
+  /* background-color: #f8f7f7; Example of a bold color for the button */
+  /* border: none; */
+  padding: 0.3em 0.3em;
+  /* color: rgb(5, 5, 5); */
+  /* font-weight: bold;
   text-transform: uppercase;
   border-radius: 5px; /* Rounded corners for the button */
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
-  cursor: pointer; /* Cursor pointer for better UX */
+  /*box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);  Glowing effect 
+  cursor: pointer; Cursor pointer for better UX */
 }
+/*
 .home-content button:hover {
   background-color: #36f478cc; /* Slightly different color on hover */
-  box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increased glowing effect on hover */
-}
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 1);  Increased glowing effect on hover 
+} */
