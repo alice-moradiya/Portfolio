@@ -97,6 +97,7 @@ body {
 
 .home-content h1 {
   font-size: 4.5em;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /* Creates a glowing effect */
 }
 
 .home-content h2 {
@@ -112,11 +113,17 @@ body {
 }
 
 .home-content button {
-  font-size: 1em;
-  color: #ffffff;
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: 2px solid rgb(255, 255, 255); /* Adjust as needed */
-  background: none;
-  cursor: pointer;
+  background-color: #f8f7f7; /* Example of a bold color for the button */
+  border: none;
+  padding: 1em 2em;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px; /* Rounded corners for the button */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  cursor: pointer; /* Cursor pointer for better UX */
+}
+.home-content button:hover {
+  background-color: #36f478cc; /* Slightly different color on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increased glowing effect on hover */
 }
