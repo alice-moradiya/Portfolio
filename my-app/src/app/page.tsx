@@ -11,7 +11,7 @@ import Layout from '../app/layout'
 import Header from './header'
 import Home from './home.js'
 import HomePageContent from './home'; // Assuming home.js exports HomePageContent
-
+import Footer from './footer'
 
 const Page = () => {
   return (
@@ -19,7 +19,7 @@ const Page = () => {
       <Header />
       <WavyBackground />
       <HomePageContent />
-     
+     <Footer />
 
     </SSRProvider>
       );

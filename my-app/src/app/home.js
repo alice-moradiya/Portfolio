@@ -12,7 +12,8 @@ const HomePageContent = () => {
         <p>Dynamic Software Developer with a track record of driving user adoption and enhancing </p>
         <p>software functionality. Proficient in software development and database management </p>
         <p>with a strong foundation in teamwork and problem-solving.</p>
-        {borderMagicButton} 
+        {borderMagicButton}
+ 
         
       </div>
 
