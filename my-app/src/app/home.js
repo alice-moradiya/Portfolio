@@ -6,7 +6,7 @@ import { buttons } from '@/app/utils/components/ui/tailwindcss-buttons.tsx';
 const HomePageContent = () => {
   const borderMagicButton = buttons.find(button => button.name === 'Border Magic').component;
   return (
-      <div id="home-content" className="home-content text-white"> 
+      <div id="home" className="home-content text-white"> 
         <h1>Alice Moradiya</h1>
         <h2>Web Developer | Software Developer</h2>
         <p>Dynamic Software Developer with a track record of driving user adoption and enhancing </p>
