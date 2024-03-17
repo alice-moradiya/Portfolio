@@ -28,14 +28,11 @@ body
    font-size: 16px;
 
 }
-/* ... (your existing CSS styles) ... */
-
-/* Ensure each section takes the full viewport height */
+/* ... (existing CSS styles) ... */
 .section {
    min-height: 100vh;
 }
 
-/* Hide overflow to prevent scrolling between sections */
 body {
    overflow: hidden;
 }

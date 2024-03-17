@@ -1,17 +1,17 @@
-// page.tsx
 "use client";
 
 import '../app/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import SSRProvider from 'react-bootstrap/SSRProvider';
 import React from 'react';
-import { WavyBackground } from '@/app/utils/components/ui/wavy-background'; // using the @ alias
+import { WavyBackground } from '@/app/utils/components/ui/wavy-background'; 
 import Link from 'next/link';
 import Layout from '../app/layout'
 import Header from './header'
 import Home from './home.js'
-import HomePageContent from './home'; // Assuming home.js exports HomePageContent
+import HomePageContent from './home'; 
 import Footer from './footer'
+import About from './about'
 
 const Page = () => {
   return (
@@ -19,6 +19,7 @@ const Page = () => {
       <Header />
       <WavyBackground />
       <HomePageContent />
+      <About />
      <Footer />
 
     </SSRProvider>
