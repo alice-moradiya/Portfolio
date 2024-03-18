@@ -15,6 +15,9 @@ const About = () => {
         <p>Beyond my technical skills, I am a strong communicator and collaborator, eager to contribute to interdisciplinary teams and engage in meaningful projects.</p>
         
       </div>
+      <div className="about-image">
+        <img src={"/profile.png"} alt="[Alice photo]" />
+      </div>
     </div>
   );
 };
