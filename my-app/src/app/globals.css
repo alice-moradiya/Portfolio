@@ -69,8 +69,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* padding-top: 75px;  */
-
   background: linear-gradient(
       to bottom,
       transparent,
@@ -212,9 +210,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 50px ; 
   gap: 20px; 
-  background: #ffffff45;
+  /* background: #ffffff45; */
 }
 
 .about-content {
@@ -222,20 +221,23 @@ body {
   color: white;
   max-width: 600px;
 }
-about-image {
+
+.about-image {
   flex: 1;
-  display: flex;
+  display: block;
   justify-content: flex-end;
   max-width: 50%; 
+  position: absolute;
+  bottom: 0;
+  top:650px;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
-.about-image img {
-  max-width: 100%;
-  height: 550px;
-  
-}
 #about{
-  padding-top: 100px;
+  padding-top: 175px;
+  padding-bottom: 163px;
 }
 
 
