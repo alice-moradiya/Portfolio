@@ -10,9 +10,9 @@ const Header = () => {
       <Navbar fixed="top" id="Nav" >
         <Container>
           <Navbar.Brand href="#home" style={{ paddingRight: '115px' }}> <img src="/logo.png" 
-            width="90" // Setting the width of image
-            height="35" // Setting the height of image
-            className="d-inline-block align-top" // Bootstrap classes for alignment
+            width="90" 
+            height="35" 
+            className="d-inline-block align-top" 
             alt="Logo"
           /></Navbar.Brand>
           <Nav id= "text" className="me-auto">
