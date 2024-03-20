@@ -239,5 +239,34 @@ body {
   padding-top: 175px;
   padding-bottom: 163px;
 }
+.education-section {
+  text-align: center; /* Center align everything */
+  padding: 50px 0; 
+  color: rgb(255, 255, 255);
+  padding-top: 144px;
+  padding-bottom: 90px;
+}
+
+.university-logo-container {
+  margin-bottom: 20px; /* Space between logo and text */
+}
+
+.university-logo {
+  max-width: 400px; 
+  margin: 0 auto; 
+  /* background-color: #00acee; */
+}
+
+.education-info h2 {
+ /*  margin-bottom: 15px; Space between the 'Education' title and university name */
+}
+
+.education-info h3 {
+  font-weight: normal; 
+  color: #ffffff; 
+}
+.education-info p {
+  margin-bottom: 10px; /* Space between paragraphs */
+}
 
 

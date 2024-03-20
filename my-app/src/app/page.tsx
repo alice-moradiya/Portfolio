@@ -12,6 +12,7 @@ import Home from './home.js'
 import HomePageContent from './home'; 
 import Footer from './footer'
 import About from './about'
+import Education from './education'
 
 const Page = () => {
   return (
@@ -20,6 +21,7 @@ const Page = () => {
       <WavyBackground />
       <HomePageContent />
       <About />
+      <Education/>
      <Footer />
 
     </SSRProvider>
