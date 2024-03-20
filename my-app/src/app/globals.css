@@ -240,11 +240,17 @@ body {
   padding-bottom: 163px;
 }
 .education-section {
+  align-items: center;
+  justify-content: center;
   text-align: center; /* Center align everything */
-  padding: 50px 0; 
+  /* padding: 50px 0;  */
   color: rgb(255, 255, 255);
   padding-top: 144px;
   padding-bottom: 90px;
+  padding-left: 19%;  
+  padding-right: 19%;
+  /* max-width: ; */
+  
 }
 
 .university-logo-container {
