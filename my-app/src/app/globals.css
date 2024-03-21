@@ -209,10 +209,10 @@ body {
 .about-container {
   display: flex;
   color: #dddddd;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.652);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.337);
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.343); /* White with 10% opacity */
+  background: rgba(255, 255, 255, 0.137); /* White with 10% opacity */
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 20px;
@@ -226,7 +226,7 @@ body {
   position: relative; /* Needed for z-index to take effect */
   z-index: 1; /* Ensures the text is above the pseudo-element */
   padding: 20px;
-  text-align: left;
+  text-align: center;
   max-width: 600px; /* Or adjust to fit your content */
 }
 
@@ -237,7 +237,7 @@ body {
   right: -10px; /* Adjust as needed */
   bottom: -10px; /* Adjust as needed */
   left: -10px; /* Adjust as needed */
-  background: rgba(60, 60, 60, 0.512); /* Slightly more opaque than the container */
+  background: rgba(60, 60, 60, 0.272); /* Slightly more opaque than the container */
   z-index: -1; /* Places this pseudo-element below the text content */
   border-radius: 15px;
 }
@@ -246,17 +246,19 @@ body {
   max-width: 200px; /* Adjust based on your image size */
   flex-shrink: 0; /* Prevents the image container from shrinking */
   margin-left: 40px; /* Space between image and text */
+  position: relative;
 }
 
 .about-image {
-  width: 100%; /* Make the image responsive within its container */
+  /* width: 100%; Make the image responsive within its container */
+  max-width: 250px;
   height: auto; /* Maintain aspect ratio */
   border-radius: 50%; /* Circular image */
 }
 
 
 #about{
-  padding-top: 135px;
+  padding-top: 110px;
   padding-bottom: 163px;
 }
 .education-section {
@@ -294,5 +296,6 @@ body {
 .education-info p {
   margin-bottom: 10px; /* Space between paragraphs */
 }
+
 
 

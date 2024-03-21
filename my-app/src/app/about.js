@@ -3,12 +3,12 @@ import React from 'react';
 const About = () => {
   return (
     <div id="about">
-    <div  className="about-container">
+    <div className="about-container">
       <div className="about-content">
         <h1>About Me</h1>
         <p>Hi, I am Alice.</p>
         <p>I am a student at the Concordia University of Edmonton, pursuing a major in Information Technology and a minor in Mathematics. </p>
-        <div className='skills-content'>
+        <div>
         <ul>
           <li>Languages: Python | Java | C++ | PHP </li>
           <li>Frameworks: Next.js | Bootstrap | Tailwind CSS | React.js | ASP.NET</li>
