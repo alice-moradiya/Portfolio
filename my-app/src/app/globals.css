@@ -15,7 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
     padding: 50px; 
@@ -27,9 +27,9 @@
   }
 
   .about-image {
-    margin-top: 20px; /* Space between text and image on small screens */
+    margin-top: 20px; /* Space between text and image on small screens 
   }
-}
+} */
 
 /* body {
   color: rgb(var(--foreground-rgb));
@@ -208,35 +208,55 @@ body {
 
 .about-container {
   display: flex;
+  color: #dddddd;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.652);
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 50px ; 
-  gap: 20px; 
-  /* background: #ffffff45; */
+  background: rgba(255, 255, 255, 0.343); /* White with 10% opacity */
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  position: relative; /* For absolute positioning of the inner card */
+  max-width: 1000px;
+  max-height: 800px;
+  margin-left: 130px;
 }
 
 .about-content {
-  flex: 1; 
-  color: white;
-  max-width: 600px;
+  position: relative; /* Needed for z-index to take effect */
+  z-index: 1; /* Ensures the text is above the pseudo-element */
+  padding: 20px;
+  text-align: left;
+  max-width: 600px; /* Or adjust to fit your content */
+}
+
+.about-content::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  right: -10px; /* Adjust as needed */
+  bottom: -10px; /* Adjust as needed */
+  left: -10px; /* Adjust as needed */
+  background: rgba(60, 60, 60, 0.512); /* Slightly more opaque than the container */
+  z-index: -1; /* Places this pseudo-element below the text content */
+  border-radius: 15px;
+}
+
+.about-image-container {
+  max-width: 200px; /* Adjust based on your image size */
+  flex-shrink: 0; /* Prevents the image container from shrinking */
+  margin-left: 40px; /* Space between image and text */
 }
 
 .about-image {
-  flex: 1;
-  display: block;
-  justify-content: flex-end;
-  max-width: 50%; 
-  position: absolute;
-  bottom: 0;
-  top:650px;
-  right: 0;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* Make the image responsive within its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular image */
 }
 
+
 #about{
-  padding-top: 175px;
+  padding-top: 135px;
   padding-bottom: 163px;
 }
 .education-section {

@@ -2,7 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div id="about" className="about-container">
+    <div id="about">
+    <div  className="about-container">
       <div className="about-content">
         <h1>About Me</h1>
         <p>Hi, I am Alice.</p>
@@ -23,6 +24,7 @@ const About = () => {
       <div className="about-image-container">
         <img className="about-image" src={"/profile.png"} alt="[Alice photo]" />
       </div>
+    </div>
     </div>
   );
 };
