@@ -13,7 +13,7 @@ import HomePageContent from './home';
 import Footer from './footer'
 import About from './about'
 import Education from './education'
-
+import Skills from './skills'
 const Page = () => {
   return (
     <SSRProvider>
@@ -22,6 +22,7 @@ const Page = () => {
       <HomePageContent />
       <About />
       <Education/>
+      <Skills />
      <Footer />
 
     </SSRProvider>
