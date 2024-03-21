@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,37 +15,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-/* @media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    padding: 50px; 
-  }
-
-  .about-content,
-  .about-image {
-    max-width: 100%;
-  }
-
-  .about-image {
-    margin-top: 20px; /* Space between text and image on small screens 
-  }
-} */
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
 #wavy-background-fixed {
   position: fixed;
@@ -53,75 +22,71 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
+  z-index: -1;
 }
+
 #Nav {
-  background-color: #000; 
-  z-index: 10; 
+  background-color: #000;
+  z-index: 10;
 }
-#home{
+
+#home {
   position: relative;
   z-index: 5;
-  color: white; 
+  color: white;
   padding-top: 185px;
   padding-bottom: 163px;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-
 .navbar {
-  background-color: rgb(0, 0, 0); 
-  border: none; 
-  box-shadow: none; 
-  font-family: 'YourFontFamily', sans-serif; 
+  background-color: rgb(0, 0, 0);
+  border: none;
+  box-shadow: none;
+  font-family: 'YourFontFamily', sans-serif;
   font-weight: 360;
   font-size: larger;
 }
 
 .navbar-brand img {
-  height:75px; 
-  width: auto; 
-  margin-right: 10px; 
+  height: 75px;
+  width: auto;
+  margin-right: 10px;
 }
 
-
-.nav-link.active, .nav-link:hover {
-  color: #dddddd; 
+.nav-link.active,
+.nav-link:hover {
+  color: #dddddd;
   text-decoration: none;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: white !important;
+  color: white !important;
 }
 
 .home-content {
-  text-align: center; 
-  padding-top: 100px; 
+  text-align: center;
+  padding-top: 100px;
 }
 
 .home-content h1 {
   font-size: 4.5em;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8); /* Creates a glowing effect */
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
 }
 
 .home-content h2 {
   font-size: 2em;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .home-content p {
   font-size: 1.1em;
   color: #ffffff;
-  margin-top: 0.5em; 
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
@@ -130,8 +95,9 @@ body {
 }
 
 .home-content button:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* glowing effect on hover  */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
+
 .card {
   width: fit-content;
   height: fit-content;
@@ -144,7 +110,6 @@ body {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-/* for all social containers*/
 .socialContainer {
   width: 52px;
   height: 52px;
@@ -156,30 +121,25 @@ body {
   overflow: hidden;
   transition-duration: .3s;
 }
-/* instagram*/
+
 .containerOne:hover {
   background-color: #d62976;
-  transition-duration: .3s;
 }
-/* twitter*/
+
 .containerTwo:hover {
   background-color: #00acee;
-  transition-duration: .3s;
 }
-/* linkdin*/
+
 .containerThree:hover {
   background-color: #0072b1;
-  transition-duration: .3s;
 }
-/* Whatsapp*/
+
 .containerFour:hover {
   background-color: #128C7E;
-  transition-duration: .3s;
 }
 
 .socialContainer:active {
   transform: scale(0.9);
-  transition-duration: .3s;
 }
 
 .socialSvg {
@@ -190,112 +150,100 @@ body {
   fill: rgb(255, 255, 255);
 }
 
-.socialContainer:hover .socialSvg {
-  animation: slide-in-top 0.3s both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .about-container {
   display: flex;
   color: #dddddd;
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.337);
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.137); /* White with 10% opacity */
+  background: rgba(255, 255, 255, 0.137);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 20px;
-  position: relative; /* For absolute positioning of the inner card */
+  position: relative;
   max-width: 1000px;
   max-height: 800px;
   margin-left: 130px;
 }
 
 .about-content {
-  position: relative; /* Needed for z-index to take effect */
-  z-index: 1; /* Ensures the text is above the pseudo-element */
+  position: relative;
+  z-index: 1;
   padding: 20px;
   text-align: center;
-  max-width: 600px; /* Or adjust to fit your content */
+  max-width: 600px;
+  transform: perspective(1500px) rotateY(5deg) rotateX(2deg);
+  box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3),
+    10px -10px 20px rgba(0, 0, 0, 0.3),
+    -20px 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-content:hover {
+  /* On hover, enhance the effect */
+  transform: perspective(1500px) rotateY(-10deg) rotateX(-4deg) scale(1.05);
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5), 
+              -20px -20px 40px rgba(0, 0, 0, 0.5), 
+              40px 40px 80px rgba(0, 0, 0, 0.25);
 }
 
 .about-content::before {
   content: '';
   position: absolute;
-  top: -10px; /* Adjust as needed */
-  right: -10px; /* Adjust as needed */
-  bottom: -10px; /* Adjust as needed */
-  left: -10px; /* Adjust as needed */
-  background: rgba(60, 60, 60, 0.272); /* Slightly more opaque than the container */
-  z-index: -1; /* Places this pseudo-element below the text content */
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  background: rgba(60, 60, 60, 0.272);
+  z-index: -1;
   border-radius: 15px;
 }
 
 .about-image-container {
-  max-width: 200px; /* Adjust based on your image size */
-  flex-shrink: 0; /* Prevents the image container from shrinking */
-  margin-left: 40px; /* Space between image and text */
+  max-width: 200px;
+  flex-shrink: 0;
+  margin-left: 40px;
   position: relative;
 }
 
 .about-image {
-  /* width: 100%; Make the image responsive within its container */
   max-width: 250px;
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular image */
+  height: auto;
+  border-radius: 50%;
 }
 
-
-#about{
+#about {
   padding-top: 110px;
   padding-bottom: 163px;
 }
+
 .education-section {
   align-items: center;
   justify-content: center;
-  text-align: center; /* Center align everything */
-  /* padding: 50px 0;  */
+  text-align: center;
   color: rgb(255, 255, 255);
   padding-top: 144px;
   padding-bottom: 90px;
-  padding-left: 19%;  
+  padding-left: 19%;
   padding-right: 19%;
-  /* max-width: ; */
-  
 }
 
 .university-logo-container {
-  margin-bottom: 20px; /* Space between logo and text */
+  margin-bottom: 20px;
 }
 
 .university-logo {
-  max-width: 400px; 
-  margin: 0 auto; 
-  /* background-color: #00acee; */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-.education-info h2 {
- /*  margin-bottom: 15px; Space between the 'Education' title and university name */
-}
+.education-info h2 {}
 
 .education-info h3 {
-  font-weight: normal; 
-  color: #ffffff; 
+  font-weight: normal;
+  color: #ffffff;
 }
+
 .education-info p {
-  margin-bottom: 10px; /* Space between paragraphs */
+  margin-bottom: 10px;
 }
-
-
-
