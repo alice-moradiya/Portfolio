@@ -14,6 +14,7 @@ import Footer from './footer'
 import About from './about'
 import Education from './education'
 import Skills from './skills'
+import Experience from './experience'
 const Page = () => {
   return (
     <SSRProvider>
@@ -23,6 +24,7 @@ const Page = () => {
       <About />
       <Education/>
       <Skills />
+      <Experience />
      <Footer />
 
     </SSRProvider>
