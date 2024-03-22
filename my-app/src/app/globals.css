@@ -407,11 +407,13 @@ body {
 .experience-container {
   font-family: Arial, sans-serif;
   padding: 20px;
+
 }
 
 .timeline {
   position: relative;
-  margin-left: 50px; 
+  margin-left: 530px;
+  margin-right: 230px; 
 }
 
 .timeline::before {
@@ -434,7 +436,7 @@ body {
   position: absolute;
   top: 20px; 
   left: 15px;
-  width: 30px; 
+  width: 5px; 
   height: 30px; 
   border: 3px solid #3498db;
   border-radius: 50%;
@@ -455,4 +457,8 @@ body {
   transform: scale(1.1); /* Pop out effect */
 }
 
-
+.experience-container h2{
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 35px;
+}

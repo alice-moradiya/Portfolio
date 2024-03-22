@@ -3,15 +3,21 @@ import React, { useState, useEffect } from 'react';
 const experiences = [
   {
     id: 1,
-    title: "Mapstreak Flyseas",
+    title: "Grey-box",
     position: "Web Developer | Internship",
-    date: "June 2021 - Dec 2021",
+    date: "December 2023 - March 2024",
   },
   {
     id: 2,
+    title: "Techeshta",
+    position: "Software Developer",
+    date: "July 2019 - March 2020",
+  },
+  {
+    id: 3,
     title: "Self Employed",
     position: "Full Stack Developer",
-    date: "Oct 2021 - Present",
+    date: "May 2021 - Present",
   },
 
 ];
@@ -34,7 +40,7 @@ const ExperiencePage = () => {
   }, []);
 
   return (
-    <div className="experience-container">
+    <div id='Experience' className="experience-container">
       <h2>Experience</h2>
       <div className="timeline">
         {experiences.map(exp => (
