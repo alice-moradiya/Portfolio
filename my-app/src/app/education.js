@@ -6,6 +6,7 @@ const education = () => {
     return (
 
         <div id="Education" className="education-section">
+            
             <div className="university-logo-container">
                 <img src="/Concordia.png" alt="Concordia University of Edmonton" className="university-logo" />
             </div>
@@ -21,10 +22,14 @@ const education = () => {
                 <div className="school-logo-container">
                 <img src="/Ashadeep.png" alt="Ashadeep Science Bhavan" className="school-logo" />
                 </div>
-                <div className="education-info">
-                    <h3>High School Diploma in Computer Science | 2017 – 2019</h3>
-                    <p>Ashadeep Science Bhavan</p>
+                <div className="school-education-info">
+                <h2>Ashadeep Science Bhavan</h2>
+                    <h3>High School Diploma</h3>
+                    <h4>Computer Science | 2017 – 2019</h4>
                     <p>Grade: A*</p>
+                    <p>Mastered foundational computer science principles, focusing on programming languages such as Python and Java, which laid the groundwork for advanced software development.
+Developed a strong understanding of software development life cycle (SDLC) methodologies, enhancing problem-solving and project management skills.
+Gained practical experience in web development and database management, utilizing technologies like HTML, CSS, and MySQL, preparing for real-world software development challenges.</p>
                 </div>
             </div>
         </div>

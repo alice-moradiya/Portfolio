@@ -235,8 +235,15 @@ body {
   margin: 0 auto;
 }
 
-.education-info h2 {}
+.school-logo-container {
+  margin-bottom: 20px;
+}
 
+.school-logo {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: -130px;
+}
 .education-info h3 {
   font-weight: normal;
   color: #ffffff;
@@ -246,7 +253,14 @@ body {
   margin-bottom: 10px;
 }
 
+.school-education-info h3 {
+  font-weight: normal;
+  color: #ffffff;
+}
 
+.school-education-info p {
+  margin-bottom: 10px;
+}
 
 .tooltip-container {
   position: relative;
