@@ -216,6 +216,8 @@ body {
 }
 
 .education-section {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -224,6 +226,7 @@ body {
   padding-bottom: 90px;
   padding-left: 19%;
   padding-right: 19%;
+  width: 100%;
 }
 
 .university-logo-container {
@@ -235,15 +238,6 @@ body {
   margin: 0 auto;
 }
 
-.school-logo-container {
-  margin-bottom: 20px;
-}
-
-.school-logo {
-  max-width: 200px;
-  margin: 0 auto;
-  margin-top: -130px;
-}
 .education-info h3 {
   font-weight: normal;
   color: #ffffff;
@@ -253,14 +247,22 @@ body {
   margin-bottom: 10px;
 }
 
-.school-education-info h3 {
-  font-weight: normal;
-  color: #ffffff;
+
+.school-logo-container {
+  margin-bottom: 20px;
 }
 
-.school-education-info p {
-  margin-bottom: 10px;
+.school-logo {
+  max-width: 150px;
+  margin: 0 auto;
+  margin-top: 144px;
 }
+.school-education-info {
+  width: 100%; /* Adjust this as needed */
+  max-width: 700px;
+}
+
+
 
 .tooltip-container {
   position: relative;
