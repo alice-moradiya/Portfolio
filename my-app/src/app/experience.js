@@ -23,17 +23,20 @@ const experiences = [
 ];
 
 const ExperiencePage = () => {
-  const [activeId, setActiveId] = useState(null);
+  const [visibleId, setVisibleId] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      
-      const newActiveId = window.scrollY > 200 ? 2 : 1;
-      setActiveId(newActiveId);
+      // Get all experience items
+      const items = document.querySelectorAll('.timeline-item');
+      const newVisibleId = [...items].findIndex(item => {
+        const rect = item.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom >= 0;
+      });
+      setVisibleId(newVisibleId);
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -43,8 +46,16 @@ const ExperiencePage = () => {
     <div id='Experience' className="experience-container">
       <h2>Experience</h2>
       <div className="timeline">
-        {experiences.map(exp => (
-          <div key={exp.id} className={`timeline-item ${activeId === exp.id ? 'active' : ''}`}>
+        {experiences.map((exp, index) => (
+          <div
+            key={exp.id}
+            className={`timeline-item ${visibleId === index ? 'active' : ''}`}
+            style={{
+              transform: `translateY(${visibleId >= index ? 0 : 100}%)`,
+              opacity: visibleId >= index ? 1 : 0,
+              transitionDelay: `${index * 0.2}s`
+            }}
+          >
             <div className="timeline-content">
               <h3>{exp.title}</h3>
               <p>{exp.position}</p>

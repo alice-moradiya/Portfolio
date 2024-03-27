@@ -420,7 +420,7 @@ body {
 .transform {
   transition: transform 0.3s ease; 
 }
-.experience-container {
+/* .experience-container {
   font-family: Arial, sans-serif;
   padding: 20px;
 
@@ -471,10 +471,40 @@ body {
 
 .timeline-item.active .timeline-content {
   transform: scale(1.1); /* Pop out effect */
-}
+/* 
 
 .experience-container h2{
   color: #ffffff;
   text-align: center;
   padding-bottom: 35px;
+}  */
+.experience-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 50px; /* Adjust based on your line design */
+}
+
+.timeline-item {
+  background-color: orange; /* Your preferred color */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.timeline-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-content {
+  padding-left: 20px;
 }
