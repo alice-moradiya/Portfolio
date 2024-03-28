@@ -420,18 +420,17 @@ body {
 .transform {
   transition: transform 0.3s ease; 
 }
-/* .experience-container {
-  font-family: Arial, sans-serif;
-  padding: 20px;
 
-}
-
+/* 
 .timeline {
   position: relative;
   margin-left: 530px;
   margin-right: 230px; 
-}
-
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} */
+/* 
 .timeline::before {
   content: '';
   position: absolute;
@@ -440,71 +439,79 @@ body {
   bottom: 0;
   width: 2px;
   background: #000;
-}
+} */
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  top: 20px; 
-  left: 15px;
-  width: 5px; 
-  height: 30px; 
-  border: 3px solid #3498db;
-  border-radius: 50%;
-  background: white;
-  z-index: 1;
-}
-
-.timeline-content {
-  position: relative;
-  background: orange;
-  padding: 10px;
-  border-radius: 4px;
-  left: 60px; 
-  transition: transform 0.3s ease;
-}
-
-.timeline-item.active .timeline-content {
-  transform: scale(1.1); /* Pop out effect */
-/* 
-
-.experience-container h2{
-  color: #ffffff;
-  text-align: center;
-  padding-bottom: 35px;
-}  */
 .experience-container {
   padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
 }
 
 .timeline {
   position: relative;
-  margin-left: 50px; /* Adjust based on your line design */
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  /* text-align: center; */
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #000; 
 }
 
 .timeline-item {
-  background-color: orange; /* Your preferred color */
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  margin: 20px 0;
   position: relative;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.timeline-item.active {
-  opacity: 1;
-  transform: translateY(0);
+.timeline-item.left {
+  padding-right: 30px;
 }
 
-.timeline-content {
-  padding-left: 20px;
+.timeline-item.right {
+  padding-left: 30px;
+}
+
+.timeline-item .timeline-content {
+  position: relative;
+  width: 40%; 
+  padding: 0 20px;
+  background: #ff8c00; 
+  box-shadow: 0 3px 0 #000; 
+  border-radius: 4px;
+  /* text-align: center; */
+}
+
+.timeline-item.left .timeline-content {
+  float: right;
+  text-align: right;
+}
+
+.timeline-item.right .timeline-content {
+  float: left;
+  text-align: left;
+}
+.experience-container h2{
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+
+}
+.timeline-item h3,
+.timeline-item p,
+.timeline-item span {
+  color: #fff;
+  text-align: center;
+}
+
+.timeline-item:after {
+  content: '';
+  display: block;
+  clear: both;
 }
