@@ -461,12 +461,15 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #000; 
+  background: #ffffff; 
 }
 
 .timeline-item {
   margin: 20px 0;
   position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out; 
 }
 
 .timeline-item.left {
@@ -514,4 +517,15 @@ body {
   content: '';
   display: block;
   clear: both;
+}
+/* 
+.timeline-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+} */
+
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
 }
