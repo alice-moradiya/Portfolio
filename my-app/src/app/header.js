@@ -21,7 +21,7 @@ const Header = () => {
             <Nav.Link href="#Education">Education</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#Experience">Experience</Nav.Link>
-            <Nav.Link href="#">Projects</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#">Contact</Nav.Link>
           </Nav>
         </Container>

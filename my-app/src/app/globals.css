@@ -452,6 +452,7 @@ body {
   list-style: none;
   overflow: hidden;
   /* text-align: center; */
+  padding-bottom: 35px;
 }
 
 .timeline:before {
@@ -529,3 +530,9 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+#projects{
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+
