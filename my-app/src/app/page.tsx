@@ -16,6 +16,7 @@ import Education from './education'
 import Skills from './skills'
 import Experience from './experience'
 import ProjectsSection from './projects';
+import Contact from './contact'
 const Page = () => {
   return (
     <SSRProvider>
@@ -27,6 +28,7 @@ const Page = () => {
       <Skills />
       <Experience />
       <ProjectsSection />
+      <Contact/>
      <Footer />
 
     </SSRProvider>
