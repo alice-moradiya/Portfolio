@@ -540,7 +540,7 @@ body {
 #projects h1{
   color: white; 
   text-align: center;
-  font-weight: bold; 
+  /* font-weight: bold;  */
   /* padding-bottom: 50px; */
 }
 .project-card img {
@@ -563,5 +563,54 @@ body {
   font-weight: bold; 
   margin-bottom: 19px;
 }
+#Contactme{
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+#Contactme h1{
+  padding-bottom: 20px;
+  color: white; 
+  text-align: center;
+  /* font-weight: bold;  */
+  /* padding-bottom: 50px; */
+}
+
+.contact-content {
+  display: block; 
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.contact-form {
+  max-width: 100%; 
+}
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+}
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#contactform{
+  width: 400px;
+  height: 400px;
+}
+@media (min-width: 1024px) { /* for desktop viewports */
+  .contact-content {
+    max-width: 900px; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+  }
+}
+
 
 

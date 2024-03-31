@@ -12,7 +12,7 @@ const experiences = [
     id: 2,
     title: "Techeshta",
     position: "Software Developer | Internship",
-    date: "July 2019 - March 2020",
+    date: "March 2019 - March 2020",
   },
   {
     id: 3,
