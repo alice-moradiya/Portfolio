@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { buttons } from '@/app/utils/components/ui/tailwindcss-buttons.tsx';
 import '../app/globals.css';
+import LinkedIn from './linkedin'
+import Github from './github'
 
 const jobTitles = ["Web Development", "Software Development", "Frontend Development", "Backend Development"]; // Add more job titles if needed
 
@@ -38,9 +40,10 @@ const HomePageContent = () => {
         <p>Dynamic Software Developer with a track record of driving user adoption and enhancing </p>
         <p>software functionality. Proficient in software development and database management </p>
         <p>with a strong foundation in teamwork and problem-solving.</p>
+        <div id ="infobuttons"><LinkedIn/>
         {borderMagicButton}
- 
-        
+        <Github/> 
+        </div>
       </div>
 
   );
