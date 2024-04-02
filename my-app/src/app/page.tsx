@@ -10,7 +10,7 @@ import Layout from '../app/layout'
 import Header from './header'
 import Home from './home.js'
 import HomePageContent from './home'; 
-// import Footer from './footer'
+import Footer from './footer'
 import About from './about'
 import Education from './education'
 import Skills from './skills'
@@ -29,7 +29,7 @@ const Page = () => {
       <Experience />
       <ProjectsSection />
       <Contact/>
-     {/* <Footer /> */}
+     <Footer />
 
     </SSRProvider>
       );

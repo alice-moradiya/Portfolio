@@ -299,6 +299,7 @@ body {
   position: relative;
 }
 
+
 .timeline {
   position: relative;
   width: 100%;
@@ -361,10 +362,13 @@ body {
 
 }
 .timeline-item h3,
-.timeline-item p,
-.timeline-item span {
+.timeline-item p {
   color: #fff;
   text-align: center;
+  /* padding-top: 15px; */
+}
+.timeline-item h3{
+  padding-top: 15px;
 }
 
 .timeline-item:after {
@@ -466,6 +470,8 @@ body {
     height: 450px;
   }
 }
-
+.credit{
+  padding-bottom: -200px;
+}
 
 

@@ -65,7 +65,7 @@ const ExperiencePage = () => {
             <div className="timeline-content">
               <h3>{exp.title}</h3>
               <p>{exp.position}</p>
-              <span>{exp.date}</span>
+              <p>{exp.date}</p>
             </div>
           </div>
         ))}
