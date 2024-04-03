@@ -147,7 +147,7 @@ body {
 }
 
 .containerTwo:hover {
-  background-color: #1db632;
+  background-color: #a855f092;
 }
 
 /* .containerThree:hover {
@@ -470,8 +470,75 @@ body {
     height: 450px;
   }
 }
-.credit{
-  padding-bottom: -200px;
+/* Footer styles */
+footer {
+  font-family: 'Arial', sans-serif; 
+  background-color: #1A1A2E; 
+  color: white;
 }
+
+footer .max-w-6xl {
+  padding: 32px 16px;
+  max-width: 1280px; 
+  margin: 0 auto;
+}
+
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer a:hover {
+  color: #FFD700; 
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 0.25rem; 
+}
+
+.credit {
+  border-top: 1px solid #424242; 
+  padding-top: 16px;
+  padding-bottom: 0;
+  font-size: 0.875rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+/*keyframes for the fade-in-up animation */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* animation for the footer elements */
+footer .animate-fade-in-up {
+  animation: fade-in-up 0.7s ease-out forwards;
+}
+
 
 
