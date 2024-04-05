@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1A1A2E] text-white">
+    <footer  className=" text-white">
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className="flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/3 text-center md:text-left">
@@ -26,14 +26,14 @@ const Footer = () => {
           <div className="w-full md:w-1/3 text-center md:text-right">
             <h2 className="text-2xl font-bold">Contact Info</h2>
             <p>📍 Edmonton, Alberta-T6E2G7</p>
-            <p>✉️ alice.moradiya@gmail.com</p> {/* windows + . for emoji */}
+            <a href='mailto:alice.moradiya@gmail.com'>✉️ alice.moradiya@gmail.com</a> {/* windows + . for emoji */}
             <div className="social-icons">
               {/* social media links */}
             </div>
           </div>
         </div>
         <div  className="credit border-t border-gray-700 text-center py-8">
-          <p>😎 Designed by Alice Moradiya </p>
+          <p>😎 Designed by Alice Moradiya 😎</p>
         </div>
       </div>
     </footer>

@@ -28,7 +28,7 @@ const Page = () => {
       <Skills />
       <Experience />
       <ProjectsSection />
-      <Contact/>
+      {/* <Contact/> */}
      <Footer />
 
     </SSRProvider>
