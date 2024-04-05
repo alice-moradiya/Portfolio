@@ -18,7 +18,7 @@ const About = () => {
         </ul>
         </div>
         <p>Beyond my technical skills, I am a quick learner, strong communicator and collaborator, I am passionate about applying my knowledge to projects that demand innovative solutions and meaningful impact.</p>
-        <p>Let's connect and create something impactful together.</p>
+        <p>Let&apos;s connect and create something impactful together.</p>
         
       </div>
       <div className="about-image-container">

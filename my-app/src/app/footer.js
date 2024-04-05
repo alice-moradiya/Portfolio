@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className="flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/3 text-center md:text-left">
-            <h2 className="text-2xl font-bold">Alice's Portfolio</h2>
+            <h2 className="text-2xl font-bold">Alice&apos;s Portfolio</h2>
             <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
             <p>Keep Rising 🚀.</p>
           </div>
