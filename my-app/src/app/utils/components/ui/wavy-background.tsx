@@ -1,4 +1,3 @@
-"use client";
 import { cn } from "@/app/utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
@@ -28,14 +27,9 @@ export const WavyBackground = ({
   [key: string]: any;
 }) => {
   const noise = createNoise3D();
-  let w: number,
-    h: number,
-    nt: number,
-    i: number,
-    x: number,
-    ctx: any,
-    canvas: any;
+  let w: number, h: number, nt: number, i: number, x: number, ctx: any, canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -47,38 +41,15 @@ export const WavyBackground = ({
     }
   };
 
-  const WavyBackground = () => {
-    useEffect(() => {
-      // Your resize logic here, it will now only run on the client
-      const handleResize = () => {
-        // Your resize logic
-      };
-  
-      // Set up the event listener
-      window.addEventListener('resize', handleResize);
-  
-      // Call the handler right away so state gets updated with initial window size
-      handleResize();
-  
-      // Remove event listener on cleanup
-      return () => window.removeEventListener('resize', handleResize);
-    }, []); // Empty array ensures effect runs only on mount and unmount
-  
-    // Your component code here...
-  };
-
   const init = () => {
     canvas = canvasRef.current;
+    if (!canvas) return; // Ensure canvas is not null
     ctx = canvas.getContext("2d");
+    if (!ctx) return; // Ensure context is not null
     w = ctx.canvas.width = window.innerWidth;
     h = ctx.canvas.height = window.innerHeight;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
-    window.onresize = function () {
-      w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
-      ctx.filter = `blur(${blur}px)`;
-    };
     render();
   };
 
@@ -113,44 +84,33 @@ export const WavyBackground = ({
     animationId = requestAnimationFrame(render);
   };
 
-  useEffect(() => {
-    init();
-    return () => {
-      cancelAnimationFrame(animationId);
-    };
-  }, []);
-
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
-    // I'm sorry but i have got to support it on safari.
-    setIsSafari(
-      typeof window !== "undefined" &&
-        navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome")
-    );
-  }, []);
+    if (typeof window !== "undefined") {
+      init();
+      const handleResize = () => {
+        w = ctx.canvas.width = window.innerWidth;
+        h = ctx.canvas.height = window.innerHeight;
+        canvas.style.top = '50px'; // Adjust based on your requirements
+        ctx.filter = `blur(${blur}px)`;
+      };
+      window.addEventListener('resize', handleResize);
+      setIsSafari(
+        navigator.userAgent.includes("Safari") && !navigator.userAgent.includes("Chrome")
+      );
 
-  <canvas
-  className="absolute inset-0"
-  ref={canvasRef}
-  id="canvas"
-  style={{
-    zIndex: -1, // Ensure the canvas is behind everything else
-    ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
-    top: '50px',
-  }}
-></canvas>
-
-window.onresize = function () {
-  w = ctx.canvas.width = window.innerWidth;
-  h = ctx.canvas.height = window.innerHeight - 50; // Subtract the navbar height
-  canvas.style.top = '50px'; // Ensure canvas top is set after resizing
-  ctx.filter = `blur(${blur}px)`;
-};
+      return () => {
+        window.removeEventListener('resize', handleResize);
+        if (animationId) {
+          cancelAnimationFrame(animationId);
+        }
+      };
+    }
+  }, []); // This useEffect hook is for initialization and cleanup
 
   return (
     <div
-    id="wavy-background-fixed" className={cn(
+      id="wavy-background-fixed" className={cn(
         "h-screen flex flex-col items-center justify-center",
         containerClassName
       )}

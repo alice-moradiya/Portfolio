@@ -1,29 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
+import { useEffect } from 'react';
+
+const useClientSideEffect = () => {
+  useEffect(() => {
     // Smooth scroll to sections when clicking on navigation links
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
-        link.addEventListener('click', smoothScroll);
+      link.addEventListener('click', smoothScroll);
     });
 
     function smoothScroll(e) {
-        e.preventDefault();
+      e.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+      const targetId = e.currentTarget.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
 
-        window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth'
-        });
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+      });
     }
 
-    // Enable scrolling between sections using the mouse wheel
-    let isScrolling;
-    window.addEventListener('scroll', function () {
-        clearTimeout(isScrolling);
-        isScrolling = setTimeout(function () {
-            body.style.overflow = 'hidden';
-        }, 66);
-        body.style.overflow = 'visible';
-    });
-});
+    // Cleanup event listeners on unmount
+    return () => {
+      navLinks.forEach(link => {
+        link.removeEventListener('click', smoothScroll);
+      });
+    };
+  }, []);
+};
+
+export default useClientSideEffect;

@@ -32,9 +32,9 @@ const ExperiencePage = () => {
       expRefs.current.push(el);
     }
   };
-
+  // IntersectionObserver API
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(  
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {

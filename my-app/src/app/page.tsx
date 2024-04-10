@@ -1,5 +1,6 @@
 "use client";
-
+// import dynamic from 'next/dynamic';
+import useClientSideEffect from './main.js';
 import '../app/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import SSRProvider from 'react-bootstrap/SSRProvider';
@@ -17,11 +18,19 @@ import Skills from './skills'
 import Experience from './experience'
 import ProjectsSection from './projects';
 import Contact from './contact'
+
+
+// const WavyBackgroundWithNoSSR = dynamic(
+//   () => import('@/app/utils/components/ui/wavy-background').then(mod => mod.WavyBackground),
+//   { ssr: false }
+// );
+
 const Page = () => {
+  useClientSideEffect();
   return (
     <SSRProvider>
       <Header />
-      <WavyBackground />
+      {/* <WavyBackground /> */}
       <HomePageContent />
       <About />
       <Education/>
