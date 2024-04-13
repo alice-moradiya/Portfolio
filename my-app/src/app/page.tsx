@@ -30,7 +30,7 @@ const Page = () => {
   return (
     <SSRProvider>
       <Header />
-      {/* <WavyBackground /> */}
+      <WavyBackground />
       <HomePageContent />
       <About />
       <Education/>

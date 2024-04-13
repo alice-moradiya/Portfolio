@@ -7,14 +7,14 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 #wavy-background-fixed {
   position: fixed;
@@ -40,7 +40,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, rgba(23, 23, 23, 1) 0%, rgba(13, 13, 13, 1) 100%);
+  /* background: linear-gradient(180deg, rgba(23, 23, 23, 1) 0%, rgba(13, 13, 13, 1) 100%); */
   color: #fff; /* Ensure text is visible on dark background */
   font-family: 'Open Sans', sans-serif; /* Example font */
 }
@@ -56,7 +56,7 @@ body {
 .navbar-brand img {
   height: 75px;
   width: auto;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 .nav-link.active,
@@ -463,14 +463,14 @@ body {
   width: 400px;
   height: 400px;
 }
-@media (min-width: 1024px) { /* for desktop viewports */
+/* @media (min-width: 1024px) { for desktop viewports */
   .contact-content {
     max-width: 900px; 
     margin-left: auto;
     margin-right: auto;
     height: 450px;
   }
-}
+
 /* Footer styles */
 footer {
   font-family: 'Arial', sans-serif; 
