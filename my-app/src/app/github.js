@@ -4,7 +4,7 @@ const Linkedin = () => {
   return (
     <div id='socialbuttons' className="card">
     
-      <a className="socialContainer containerTwo" href="https://github.com/alice-moradiya">
+      <a className="socialContainer hover:bg-[#a855f092]" href="https://github.com/alice-moradiya">
       <img src="/Github2.png" 
             // width="90" 
             // height="35" 

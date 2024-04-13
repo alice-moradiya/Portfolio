@@ -32,10 +32,10 @@ const HomePageContent = () => {
     return () => clearTimeout(typingTimeout);
   }, [jobTitle, charIndex, jobIndex]);
   return (
-      <div id="home" className="home-content text-white"> 
-        <h1>Alice Moradiya</h1>
-        <h3> I am into {jobTitle}|</h3>
-        <h2> <img src="/Web-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo"/> Web Developer |   
+      <div id="home" className="relative z-5 text-center text-white pt-[185px] pb-[163px]"> 
+        <h1 className="text-[72px] text-shadow style={{ textShadow: '0 0 6px rgba(255, 255, 255, 0.8)' }}">Alice Moradiya</h1>
+        <h3 className="text-[28px]"> I am into {jobTitle}|</h3>
+        <h2 className="text-[32px]"> <img src="/Web-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo"/> Web Developer |   
          <img src="/Soft-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo"/> Software Developer</h2>
         <p>Dynamic Software Developer with a track record of driving user adoption and enhancing </p>
         <p>software functionality. Proficient in software development and database management </p>
