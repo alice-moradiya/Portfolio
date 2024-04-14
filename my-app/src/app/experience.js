@@ -14,12 +14,12 @@ const experiences = [
     position: "Web Developer | Internship",
     date: "March 2019 - March 2020",
   },
-  {
-    id: 3,
-    title: "Self Employed",
-    position: "Full Stack Developer",
-    date: "May 2021 - Present",
-  },
+  // {
+  //   id: 3,
+  //   title: "Self Employed",
+  //   position: "Full Stack Developer",
+  //   date: "May 2021 - Present",
+  // },
 
 ];
 
@@ -58,12 +58,12 @@ const ExperiencePage = () => {
 
   return (
     <div id="Experience" className="experience-container">
-      <h2>Experience</h2>
+      <h2 className="text-center text-3xl font-bold my-5">Experience</h2>
       <div className="timeline">
         {experiences.map((exp, index) => (
           <div ref={addToRefs} key={exp.id} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
             <div className="timeline-content">
-              <h3>{exp.title}</h3>
+              <h3 className="max-w-full break-words">{exp.title}</h3>
               <p>{exp.position}</p>
               <p>{exp.date}</p>
             </div>

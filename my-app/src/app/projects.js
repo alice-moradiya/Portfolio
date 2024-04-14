@@ -52,7 +52,7 @@ const ProjectsSection = () => {
   return (
     <div id="projects" >
       <div className="container mx-auto">
-        <h1>Projects</h1>
+        <h1 className="text-center text-3xl font-bold my-5">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="project-card" style={{ height: '270px' }}>
@@ -62,8 +62,8 @@ const ProjectsSection = () => {
                   <h2 className="font-bold text-xl text-gray-800 mb-2">{project.name}</h2>
                   <p className="text-gray-700 text-base text-center">{project.description}</p>
                   <div className="links2">
-                    <a href={project.viewLink} className="btn-view mr-2">View</a>
-                    <a href={project.codeLink} className="btn-code">Code</a>
+                    <a href={project.viewLink} className="bg-black text-white mr-2 px-3 py-2 inline-block rounded opacity-75 hover:opacity-100 transition-opacity">View</a>
+                    <a href={project.codeLink} className="bg-black text-white mr-2 px-3 py-2 inline-block rounded opacity-75 hover:opacity-100 transition-opacity">Code</a>
                   </div>
                 </div>
               </div>
