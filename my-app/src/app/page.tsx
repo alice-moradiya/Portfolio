@@ -18,6 +18,7 @@ import Skills from './skills'
 import Experience from './experience'
 import ProjectsSection from './projects';
 import Contact from './contact'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 // const WavyBackgroundWithNoSSR = dynamic(
@@ -29,6 +30,7 @@ const Page = () => {
   useClientSideEffect();
   return (
     <SSRProvider>
+      <SpeedInsights/>
       <Header />
       <WavyBackground />
       <HomePageContent />
