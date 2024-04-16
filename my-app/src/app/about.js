@@ -17,7 +17,7 @@ const About = () => {
               <li>Tools: WordPress | RESTful APIs | Git | GitHub</li>
             </ul>
           </div>
-          <p className='text-white'>What sets me apart? Beyond my technical skills, I'm a quick learner 🚀, effective communicator 🗣️, and enthusiastic collaborator 👥. I'm deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>
+          <p className='text-white'>What sets me apart? Beyond my technical skills, I&apos;m a quick learner 🚀, effective communicator 🗣️, and enthusiastic collaborator 👥. I&apos;m deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>
           <p className='text-white'>💬 Let&apos;s connect and create something impactful together! 💡</p>
         </div>
         <div className="about-image-container max-w-[200px] ml-10 relative">
