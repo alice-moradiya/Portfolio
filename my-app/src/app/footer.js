@@ -16,10 +16,10 @@ const Footer = () => {
               <ul>
                 <li><a href="#home" className="hover:underline">Home</a></li>
                 <li><a href="#about" className="hover:underline">About</a></li>
+                <li><a href="#Education" className="hover:underline">Education</a></li>
                 <li><a href="#skills" className="hover:underline">Skills</a></li>
-                <li><a href="#education" className="hover:underline">Education</a></li>
-                <li><a href="#work" className="hover:underline">Work</a></li>
-                <li><a href="#experience" className="hover:underline">Experience</a></li>
+                <li><a href="#Experience" className="hover:underline">Experience</a></li>
+                <li><a href="#projects" className="hover:underline">Projects</a></li>
               </ul>
             </nav>
           </div>

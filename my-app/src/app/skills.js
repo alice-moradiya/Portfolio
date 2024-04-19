@@ -4,7 +4,7 @@ import React from 'react';
 const skills = {
 
     Skills: [
-        { name: 'Bootstrap', icon: '/bootstrap.png' },
+        { name: 'Bootstrap', icon: '/Bootstrap.png' },
         { name: 'ReactJS', icon: '/react.png' },
         { name: 'NextJS', icon: '/next.png' },
         { name: 'Android', icon: '/Android.png' },
@@ -20,8 +20,8 @@ const skills = {
 
         { name: 'MySQL', icon: '/Mysql.png' },
         { name: 'AWS', icon: '/AWS.png' },
-        { name: 'ReactBootstrap', icon: '/Reactboot.png' },
-        { name: 'ASP.Net', icon: '/Asp.png' },
+        { name: 'ReactBootstrap', icon: '/ReactBoot.png' },
+        { name: 'ASP.Net', icon: '/ASP.png' },
         { name: 'HTML', icon: '/HTML.png' },
         { name: 'CSS', icon: '/CSS.png' },
 
