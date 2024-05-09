@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
         <div  className="credit border-t border-gray-700 text-center py-8">
-          <p> Designed by Alice Moradiya </p>
+          <p> Developed by Alice Moradiya </p>
         </div>
       </div>
     </footer>

@@ -9,11 +9,11 @@ const projects = [
     codeLink: "https://github.com/alice-moradiya/SortMaster"
   },
   {
-    name: "Travel-agency-website",
-    description: "Full-stack-project. Backend integration: PHP, MySQL for dynamic content management. Developed secure admin login, tour addition functionality. Implemented robust database design for tour information storage.",
-    imageUrl: "/travelage.png",
-    // viewLink: "#",
-    codeLink: "https://github.com/alice-moradiya/IT-310-Travel-agency-website"
+    name: "Personal Portfolio Website",
+    description: "Made from scratch; utilized Next.js for server-side rendering. React.js & Tailwind CSS for the front-end. An interactive timeline, smooth scrolling.",
+    imageUrl: "/Portfolio.png", 
+    viewLink: "https://alicemoradiya.vercel.app/", 
+    codeLink: "https://github.com/alice-moradiya/Portfolio" 
   },
 
   {
@@ -37,14 +37,15 @@ const projects = [
     viewLink: "https://poutineparadise.000webhostapp.com/ ",
     codeLink: "https://github.com/alice-moradiya/IT-202-Restaurant-website-project"
   },
-
+    
   {
-    name: "Secure-chat-app",
-    description: "Python; UI/UX design leadership; intuitive, secure chat interface. Implemented Monoalphabetic, DES, AES, RSA encryption. Extended security to image encryption/decryption.",
-    imageUrl: "/securechat.png",
+    name: "Travel-agency-website",
+    description: "Full-stack-project. Backend integration: PHP, MySQL for dynamic content management. Developed secure admin login, tour addition functionality. Implemented robust database design for tour information storage.",
+    imageUrl: "/travelage.png",
     // viewLink: "#",
-    codeLink: "https://github.com/alice-moradiya/IT-270-Secure-ChatApp-Project"
+    codeLink: "https://github.com/alice-moradiya/IT-310-Travel-agency-website"
   },
+
 
 ];
 

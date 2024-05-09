@@ -44,7 +44,7 @@ const Skills = () => {
               skillList.map(skill => (
                 <div 
                   key={skill.name} 
-                  className="flex flex-col items-center p-4 bg-dark-card rounded-lg hover:scale-125 transform transition duration-300 cursor-pointer" 
+                  className="flex flex-col items-center p-4 bg-dark-card rounded-lg hover:scale-125 transform transition duration-300" 
                 >
                   <img src={skill.icon} alt={skill.name} className="w-12 h-12 mb-2" />
                   <span className="text-sm">{skill.name}</span>
