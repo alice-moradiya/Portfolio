@@ -21,7 +21,7 @@ const skills = {
         { name: 'MySQL', icon: '/Mysql.png' },
         { name: 'AWS', icon: '/AWS.png' },
         { name: 'ReactBootstrap', icon: '/ReactBoot.png' },
-        { name: 'ASP.Net', icon: '/ASP.png' },
+        { name: 'MongoDB', icon: '/MongoDB.png' },
         { name: 'HTML', icon: '/HTML.png' },
         { name: 'CSS', icon: '/CSS.png' },
 

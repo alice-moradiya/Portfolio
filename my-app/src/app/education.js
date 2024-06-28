@@ -31,7 +31,7 @@ const education = () => {
                 <p><strong>Key Skills:</strong> Programming Fundamentals, Object-Oriented Design, Web Development Basics, Problem-Solving</p>
                 <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Basic Python & C++</p>
                 <p><strong>Capstone Projects:</strong> Developed dynamic websites and simple software applications</p>
-                <p><strong>Internship:</strong> Secured a Web development internship at Techeshta, applying and enhancing these competencies 👨‍💻</p>
+                
 
             </div>
 
