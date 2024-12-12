@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@100;500&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,7 +32,7 @@ body {
   padding: 0;
   /* background: linear-gradient(180deg, rgba(23, 23, 23, 1) 0%, rgba(13, 13, 13, 1) 100%); */
   color: #fff; /* Ensure text is visible on dark background */
-  font-family: 'Open Sans', sans-serif; /* Example font */
+  font-family: "Open Sans", sans-serif;
 }
 
 .navbar-brand img {
@@ -39,7 +41,7 @@ body {
   /* margin-right: 534px; */
 }
 
-.nav-link.active, 
+.nav-link.active,
 .nav-link:hover {
   color: #dddddd;
   text-decoration: none;
@@ -48,19 +50,17 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: white !important;
   justify-content: flex-end;
-
 }
-.Nav{
+.Nav {
   justify-content: flex-end;
 }
 
-@media (min-width: 992px){
-
-.navbar-expand-lg .navbar-collapse {
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
     justify-content: flex-end;
-}
+  }
 }
 .home-content p {
   font-size: 1.1em;
@@ -69,21 +69,21 @@ body {
   margin-bottom: 0.5em;
 }
 /* Linkedin and github home  */
-#socialbuttons{
+#socialbuttons {
   background: transparent;
   border: none;
   margin-right: 10px;
 }
 
- /* all 3 buttons of home page */
-#infobuttons{
+/* all 3 buttons of home page */
+#infobuttons {
   display: flex;
   /* padding-left: 470px; */
-  justify-content:center;
+  justify-content: center;
 }
 
 /* Resume button */
-#bordermagic{
+#bordermagic {
   margin-right: 10px;
   margin-top: 28px;
   /* padding-left: 500px; */
@@ -111,7 +111,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 /* .containerThree:hover {
@@ -129,16 +129,14 @@ body {
 /* Responsive adjustments for home section */
 
 @media (max-width: 1024px) {
-
   #home {
     padding-top: 180px;
     padding-bottom: 163px;
     justify-content: center;
   }
-  #infobuttons{
+  #infobuttons {
     justify-content: center;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -165,7 +163,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
   }
 }
 
@@ -239,20 +236,17 @@ body {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-
 .about-image-container {
   flex: 1;
   min-width: 300px;
   padding-left: 32px;
   flex-shrink: 0;
-
 }
 
 .about-image {
   max-width: 250px;
   height: auto;
   border-radius: 50%;
-
 }
 
 /* Media Queries for Responsive Adjustments */
@@ -264,12 +258,10 @@ body {
     height: 650px;
     margin-left: 180px;
     /* padding: 0px; */
-
   }
 
-  .about-content{
+  .about-content {
     padding: 0px;
-
   }
   .about-image-container {
     max-width: 100%;
@@ -278,23 +270,21 @@ body {
     padding-right: 32px;
     /* padding: 10px; */
   }
-  .university-logo-container{
+  .university-logo-container {
     /* padding-top: 150px; */
     margin-top: 120px;
   }
 }
 
 @media (max-width: 480px) {
-
   .about-container {
     /* padding: 0px; */
     height: 722px;
     margin-right: 184px;
-    max-width:  1000px;
+    max-width: 1000px;
     margin-left: 154px;
-
   }
-  .about-content{
+  .about-content {
     margin-left: 14px;
   }
   .about-image-container {
@@ -304,20 +294,17 @@ body {
     max-width: 600px;
     margin-left: 10px;
     padding-right: 32px;
-
   }
-  .about-image{
+  .about-image {
     justify-content: center;
     /* padding-top: 190px; */
     max-width: 800px;
   }
-  .university-logo-container{
+  .university-logo-container {
     /* padding-top: 150px; */
     margin-top: 120px;
   }
 }
-
-
 
 .education-section {
   display: flex;
@@ -350,7 +337,6 @@ body {
 .education-info p {
   margin-bottom: 10px;
 }
-
 
 .school-logo-container {
   margin-bottom: 20px;
@@ -386,11 +372,11 @@ body {
   background: #000;
 } */
 
-#skills{
+#skills {
   padding-top: 80px;
   padding-bottom: 163px;
 }
-#Experience{
+#Experience {
   padding-top: 80px;
   padding-bottom: 163px;
 }
@@ -398,7 +384,6 @@ body {
   padding: 20px;
   position: relative;
 }
-
 
 .timeline {
   position: relative;
@@ -410,13 +395,13 @@ body {
 }
 
 .timeline:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ffffff; 
+  background: #ffffff;
 }
 
 .timeline-item {
@@ -424,7 +409,7 @@ body {
   position: relative;
   opacity: 0;
   transform: translateY(50px);
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 
 .timeline-item.left {
@@ -437,10 +422,10 @@ body {
 
 .timeline-item .timeline-content {
   position: relative;
-  width: 40%; 
+  width: 40%;
   padding: 0 20px;
-  background: #ff8c00ce; 
-  box-shadow: 0 3px 0 #000; 
+  background: #ff8c00ce;
+  box-shadow: 0 3px 0 #000;
   border-radius: 4px;
   /* text-align: center; */
 }
@@ -454,12 +439,11 @@ body {
   float: left;
   text-align: left;
 }
-.experience-container h2{
+.experience-container h2 {
   color: #ffffff;
   text-align: center;
   margin-bottom: 50px;
   margin-top: 100px;
-
 }
 .timeline-item h3,
 .timeline-item p {
@@ -467,12 +451,12 @@ body {
   text-align: center;
   /* padding-top: 15px; */
 }
-.timeline-item h3{
+.timeline-item h3 {
   padding-top: 15px;
 }
 
 .timeline-item:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -487,15 +471,15 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-#projects{
+#projects {
   padding-top: 80px;
   padding-bottom: 150px;
 }
-.project-card{
+.project-card {
   padding-top: 35px;
 }
-#projects h1{
-  color: white; 
+#projects h1 {
+  color: white;
   text-align: center;
   /* font-weight: bold;  */
   /* padding-bottom: 50px; */
@@ -503,7 +487,7 @@ body {
 .project-card img {
   transition: transform 0.5s ease;
 }
-.pro-image{
+.pro-image {
   object-fit: contain;
   object-position: center center;
   background-color: white;
@@ -519,26 +503,26 @@ body {
   opacity: 1;
 }
 #projectname {
-  color: white; 
-  padding: 15px; 
+  color: white;
+  padding: 15px;
   text-align: center;
-  font-weight: bold; 
+  font-weight: bold;
   margin-bottom: 19px;
 }
-#Contactme{
+#Contactme {
   padding-top: 100px;
   padding-bottom: 150px;
 }
-#Contactme h1{
+#Contactme h1 {
   padding-bottom: 20px;
-  color: white; 
+  color: white;
   text-align: center;
   /* font-weight: bold;  */
   /* padding-bottom: 50px; */
 }
 
 .contact-content {
-  display: block; 
+  display: block;
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -563,35 +547,34 @@ body {
     transform: translateY(0);
   }
 }
-#contactform{
+#contactform {
   width: 400px;
   height: 400px;
 }
 /* @media (min-width: 1024px) { for desktop viewports */
-  .contact-content {
-    max-width: 900px; 
-    margin-left: auto;
-    margin-right: auto;
-    height: 450px;
-  }
+.contact-content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+}
 
 /* Footer styles */
 
-#footer{
+#footer {
   justify-content: center;
 }
 
 footer {
-  font-family: 'Arial', sans-serif; 
-  background-color: #000000; 
+  font-family: "Arial", sans-serif;
+  background-color: #000000;
   color: white;
   justify-content: center;
-
 }
 
 footer .max-w-6xl {
   padding: 32px 16px;
-  max-width: 1280px; 
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -612,7 +595,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #FFD700; 
+  color: #ffd700;
 }
 
 footer ul {
@@ -621,11 +604,11 @@ footer ul {
 }
 
 footer li {
-  margin-bottom: 0.25rem; 
+  margin-bottom: 0.25rem;
 }
 
 .credit {
-  border-top: 1px solid #424242; 
+  border-top: 1px solid #424242;
   padding-top: 16px;
   padding-bottom: 0;
   font-size: 0.875rem;
@@ -652,20 +635,19 @@ footer .animate-fade-in-up {
   animation: fade-in-up 0.7s ease-out forwards;
 }
 
-
- /* Mobile responsiveness */
+/* Mobile responsiveness */
 
 @media (max-width: 480px) {
-
-  #footer{
+  #footer {
     justify-content: center;
   }
-  .university-logo, .school-logo {
-    height: 100px; 
+  .university-logo,
+  .school-logo {
+    height: 100px;
     width: auto;
   }
   .me-auto {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
   }
 
@@ -673,15 +655,18 @@ footer .animate-fade-in-up {
     flex-direction: column;
     margin-top: 130px;
   }
-  .education-info, .school-education-info {
-    padding: 10px; 
+  .education-info,
+  .school-education-info {
+    padding: 10px;
   }
-  .home-content h1, .home-content h3, .home-content p {
-    font-size: smaller; 
+  .home-content h1,
+  .home-content h3,
+  .home-content p {
+    font-size: smaller;
   }
   #infobuttons a {
-    margin: 10px 0; 
-}
+    margin: 10px 0;
+  }
 }
 .nav-link {
   position: relative;
@@ -689,7 +674,7 @@ footer .animate-fade-in-up {
 
 .nav-link.underline::after,
 .nav-link:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;

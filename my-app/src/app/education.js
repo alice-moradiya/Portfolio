@@ -15,7 +15,7 @@ const education = () => {
                 <h3>BSc. in Information Technology | 2020 – 2024</h3>
                 <p><strong>Major:</strong> Information Technology 🖥️ | <strong>Minor:</strong> Mathematics 🔢</p>
                 <p><strong>Relevant Courses:</strong> Software Development, Web Development, Database Management, Networking, Cybersecurity, Business, Economics</p>
-                <p><strong>University Projects:</strong> Travel-agency-website (PHP, MySQL) ✈️, Secure-chat-app (Python) 🗨️, Course-registration-system (Python) 📚</p>
+                <p><strong>University Projects:</strong> AI-Finance-Advisor(react.js, Chat GPT API) 💰, Travel-agency-website (PHP, MySQL) ✈️, Secure-chat-app (Python) 🗨️, Course-registration-system (Python) 📚</p>
 
                 <a href="https://github.com/alice-moradiya" className="no-underline inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                     GitHub

@@ -2,48 +2,49 @@ import React from 'react';
 const projects = [
 
   {
-    name: "SortMaster - Interactive Sorting Algorithm",
-    description: "Front-end development: HTML, CSS, JavaScript. Implemented & optimized sorting algorithms. User-centric design, interactive UX/UI.",
-    imageUrl: "/sortmaster.png",
-    viewLink: "https://sortmaster3.000webhostapp.com/ ",
-    codeLink: "https://github.com/alice-moradiya/SortMaster"
+    name: "BookStore",
+    description: "a full stack (MERN) (dynamic/responsive) web project, crafted with 𝗠𝗼𝗻𝗴𝗼𝗗𝗕, 𝗘𝘅𝗽𝗿𝗲𝘀𝘀.𝗷𝘀, 𝗥𝗲𝗮𝗰𝘁.𝗷𝘀, 𝗮𝗻𝗱 𝗡𝗼𝗱𝗲.𝗷𝘀.",
+    imageUrl: "/mernpro.png",
+    viewLink: "https://bookstoremern-two.vercel.app/",
+    codeLink: "https://github.com/alice-moradiya/Full-stack-Project-MERN"
   },
   {
     name: "Personal Portfolio Website",
     description: "Made from scratch; utilized Next.js for server-side rendering. React.js & Tailwind CSS for the front-end. An interactive timeline, smooth scrolling.",
-    imageUrl: "/Portfolio.png", 
-    viewLink: "https://alicemoradiya.vercel.app/", 
-    codeLink: "https://github.com/alice-moradiya/Portfolio" 
+    imageUrl: "/Portfolio.png",
+    viewLink: "https://alicemoradiya.vercel.app/",
+    codeLink: "https://github.com/alice-moradiya/Portfolio"
   },
 
   {
     name: "React.js Project",
     description: "Built with React.js: State management, component-based architecture.Designed for functionality: Custom hooks, event handling. UI/UX focus: Responsive design, interactive elements.",
     imageUrl: "/reactpro2.png",
-    viewLink: "https://calculator2221.000webhostapp.com/",
+    viewLink: "https://reactcalculator22.netlify.app/",
     codeLink: "https://github.com/alice-moradiya/React.js-project"
   },
   {
-    name: "Course-registration-system",
-    description: "Python; Comprehensive system using python programming techniques. interface for easy navigation and registration process for students",
-    imageUrl: "/coursereg.png",
-    // viewLink: "#",
-    codeLink: "https://github.com/alice-moradiya/Course-registration-system"
+    name: "SortMaster - Interactive Sorting Algorithm",
+    description: "Front-end development: HTML, CSS, JavaScript. Implemented & optimized sorting algorithms. User-centric design, interactive UX/UI.",
+    imageUrl: "/sortmaster.png",
+    viewLink: "https://sortmaster007.netlify.app/",
+    codeLink: "https://github.com/alice-moradiya/SortMaster"
   },
+
+  {
+    name: "AI-Finance-Advisor",
+    description: "AI-powered web app using ChatGPT API, React.js, and Tailwind CSS to provide personalized financial advice and simplify money management with a secure, user-friendly design.",
+    imageUrl: "/finapro.png",
+    viewLink: "https://financeadvisor.vercel.app/",
+    codeLink: "https://github.com/alice-moradiya/Automated-Personal-Finance-Advisor-IT452-capstone-project"
+  },
+
   {
     name: "Restaurant Website",
-    description: "Front-end development: Bootstrap, jQuery, CSS for responsive design. Crafted engaging UI/UX: Menu navigation, customer testimonials. Implemented dynamic content: Photo sliders, interactive menus.",
+    description: "Front-end development: Bootstrap, jQuery, CSS for responsive design. Crafted engaging UI/UX: Menu navigation",
     imageUrl: "/restweb.png",
-    viewLink: "https://poutineparadise.000webhostapp.com/ ",
+    viewLink: "https://poutineparadise.netlify.app/ ",
     codeLink: "https://github.com/alice-moradiya/IT-202-Restaurant-website-project"
-  },
-    
-  {
-    name: "Travel-agency-website",
-    description: "Full-stack-project. Backend integration: PHP, MySQL for dynamic content management. Developed secure admin login, tour addition functionality. Implemented robust database design for tour information storage.",
-    imageUrl: "/travelage.png",
-    // viewLink: "#",
-    codeLink: "https://github.com/alice-moradiya/IT-310-Travel-agency-website"
   },
 
 
