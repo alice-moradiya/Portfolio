@@ -4,7 +4,7 @@ import '../app/globals.css';
 import LinkedIn from './linkedin'
 import Github from './github'
 
-const jobTitles = ["Web Development", "Software Development", "Frontend Development", "Backend Development"]; // Add more job titles if needed
+const jobTitles = ["Web Development", "MERN Stack Development",  "Software Development", "Full Stack Development"];
 
 const HomePageContent = () => {
   const borderMagicButton = buttons.find(button => button.name === 'Border Magic').component;

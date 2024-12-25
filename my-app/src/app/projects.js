@@ -25,7 +25,7 @@ const projects = [
   },
   {
     name: "SortMaster - Interactive Sorting Algorithm",
-    description: "Front-end development: HTML, CSS, JavaScript. Implemented & optimized sorting algorithms. User-centric design, interactive UX/UI.",
+    description: "Front-end development: HTML, CSS, JavaScript. Implemented & optimized sorting algorithms ( Bubble, Insertion, Merge, Quick). User-centric design, interactive UX/UI.",
     imageUrl: "/sortmaster.png",
     viewLink: "https://sortmaster007.netlify.app/",
     codeLink: "https://github.com/alice-moradiya/SortMaster"
