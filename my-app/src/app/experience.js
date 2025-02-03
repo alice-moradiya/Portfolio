@@ -6,13 +6,19 @@ const experiences = [
     id: 1,
     title: "Grey-box",
     position: "Web Developer",
-    date: "January 2024 - Present",
+    date: "January 2024 - August 2024",
   },
   {
     id: 2,
     title: "AJ Infosoft",
     position: "Web Developer",
     date: "February 2023 - September 2023",
+  },
+  {
+    id: 3,
+    title: "Techeshta",
+    position: "Web Developer",
+    date: "May 2022 – September 2022",
   },
 
 ];

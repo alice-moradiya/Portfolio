@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div className="w-full md:w-1/3 text-center md:text-right">
             <h2 className="text-2xl font-bold">Contact Info</h2>
-            <p>📍 Edmonton, Alberta-T6E2G7</p>
+            <p>📍 Edmonton, Alberta </p>
             <a href='mailto:alice.moradiya@gmail.com'>✉️ alice.moradiya@gmail.com</a> {/* windows + . for emoji */}
             <div className="social-icons">
               {/* social media links */}
