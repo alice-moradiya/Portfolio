@@ -37,7 +37,7 @@ const Page = () => {
       <About />
       <Education/>
       <Skills />
-      <Experience />
+      {/* <Experience /> */}
       <ProjectsSection />
       {/* <Contact/> */}
      <Footer />

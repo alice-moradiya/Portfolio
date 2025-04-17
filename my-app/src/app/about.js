@@ -11,10 +11,10 @@ const About = () => {
           <div>
             <h2>Skills Toolbox 🛠️</h2>
             <ul className='text-white'>
-              <li>Languages: Python | Java | C++ | PHP</li>
+              <li>Languages: Python | Java | C++ | JavaScript | PHP</li>
               <li>Frameworks & Libraries: Next.js | Bootstrap | Tailwind CSS | React.js | jQuery</li>
-              <li>Database & Cloud: MySQL 🗃️ | AWS ☁️</li>
-              <li>Node.js | Shadcn UI | WordPress | RESTful APIs | Git | GitHub</li>
+              <li>Database & Cloud: MongoDB | MySQL 🗃️ | AWS ☁️</li>
+              <li>Node.js | Shadcn UI | WordPress | RESTful APIs | Git | GitHub | Jira</li>
             </ul>
           </div>
           <p className='text-white'>What sets me apart? Beyond my technical skills, I&apos;m a quick learner 🚀, effective communicator, and enthusiastic collaborator. I&apos;m deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>

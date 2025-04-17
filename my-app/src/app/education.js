@@ -25,7 +25,7 @@ const education = () => {
                 <img src="/Ashadeep.png" alt="Ashadeep Science Bhavan" className="school-logo" />
             </div>
             <div className="school-education-info">
-                <h3>🎓 High School Diploma</h3>
+                <h3>🎓 High School</h3>
                 <h4>💻 Computer Science | 2017 – 2019</h4>
                 <p><strong>Grade:</strong> A* 🌟</p>
                 <p><strong>Key Skills:</strong> Programming Fundamentals, Object-Oriented Design, Web Development Basics, Problem-Solving</p>

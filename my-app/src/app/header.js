@@ -16,7 +16,7 @@ const Header = () => {
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#Education">Education</Nav.Link>
                         <Nav.Link href="#skills">Skills</Nav.Link>
-                        <Nav.Link href="#Experience">Experience</Nav.Link>
+                        {/* <Nav.Link href="#Experience">Experience</Nav.Link> */}
                         <Nav.Link href="#projects">Projects</Nav.Link>
                         {/* Optional: <Nav.Link href="#Contactme">Contact</Nav.Link> */}
                     </Nav>

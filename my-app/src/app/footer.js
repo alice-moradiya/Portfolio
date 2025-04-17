@@ -18,7 +18,7 @@ const Footer = () => {
                 <li><a href="#about" className="hover:underline">About</a></li>
                 <li><a href="#Education" className="hover:underline">Education</a></li>
                 <li><a href="#skills" className="hover:underline">Skills</a></li>
-                <li><a href="#Experience" className="hover:underline">Experience</a></li>
+                {/* <li><a href="#Experience" className="hover:underline">Experience</a></li> */}
                 <li><a href="#projects" className="hover:underline">Projects</a></li>
               </ul>
             </nav>
