@@ -20,7 +20,9 @@ const About = () => {
             </ul>
           </div>
           <br />
+
           <p className='text-white'>What sets me apart? Beyond my technical skills, I&apos;m a quick learner 🚀, effective communicator, and enthusiastic collaborator. I&apos;m deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>
+          <br />
           <p className='text-white'>💬 Let&apos;s connect and create something impactful together! 💡</p>
         </div>
         <div className="about-image-container max-w-[200px] relative">
