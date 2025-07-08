@@ -7,14 +7,15 @@ const About = () => {
         <div className="about-content relative z-1 text-center">
           <h1 className="text-[42px] text-white" > About Me</h1>
           <p className="text-white">👋 Hi, I am Alice  🌟</p>
-          <p className="text-white"> I am a student at the Concordia University of Edmonton, pursuing a major in Information Technology and a minor in Mathematics. </p>
+          <p className="text-white"> A recent BSc. in Information Technology graduate from Concordia University of Edmonton, with a minor in Mathematics and a passion for building impactful web solutions. </p>
           <div>
             <h2>Skills Toolbox 🛠️</h2>
             <ul className='text-white'>
-              <li>Languages: Python | Java | C++ | JavaScript | PHP</li>
-              <li>Frameworks & Libraries: Next.js | Bootstrap | Tailwind CSS | React.js | jQuery</li>
-              <li>Database & Cloud: MongoDB | MySQL 🗃️ | AWS ☁️</li>
-              <li>Node.js | Shadcn UI | WordPress | RESTful APIs | Git | GitHub | Jira</li>
+              <li><strong> Python | Java | C++ | JavaScript | PHP </strong></li>
+              <li><strong> React.js | Next.js | Express.js | Bootstrap | Tailwind CSS | jQuery | Shadcn UI </strong></li>
+              <li> <strong>MongoDB | MySQL | AWS ☁️ | Vercel | Firebase</strong></li>
+              <li> <strong> Git | GitHub | Jira | Postman | VS Code | WordPress | Docker (basic)</strong></li>
+              <li> <strong>OpenAI API | GitHub Copilot | Pytorch | TensorFlow | Prompt Engineering</strong></li>
             </ul>
           </div>
           <p className='text-white'>What sets me apart? Beyond my technical skills, I&apos;m a quick learner 🚀, effective communicator, and enthusiastic collaborator. I&apos;m deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>
