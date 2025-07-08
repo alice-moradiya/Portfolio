@@ -9,7 +9,8 @@ const About = () => {
           <p className="text-white">👋 Hi, I am Alice  🌟</p>
           <p className="text-white"> A recent BSc. in Information Technology graduate from Concordia University of Edmonton, with a minor in Mathematics and a passion for building impactful web solutions. </p>
           <div>
-            <h2>Skills Toolbox 🛠️</h2>
+            <br />
+            <h2 className="text-3xl font-semibold mb-4">Skills Toolbox 🛠️</h2>
             <ul className='text-white'>
               <li><strong> Python | Java | C++ | JavaScript | PHP </strong></li>
               <li><strong> React.js | Next.js | Express.js | Bootstrap | Tailwind CSS | jQuery | Shadcn UI </strong></li>
@@ -18,6 +19,7 @@ const About = () => {
               <li> <strong>OpenAI API | GitHub Copilot | Pytorch | TensorFlow | Prompt Engineering</strong></li>
             </ul>
           </div>
+          <br />
           <p className='text-white'>What sets me apart? Beyond my technical skills, I&apos;m a quick learner 🚀, effective communicator, and enthusiastic collaborator. I&apos;m deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>
           <p className='text-white'>💬 Let&apos;s connect and create something impactful together! 💡</p>
         </div>
