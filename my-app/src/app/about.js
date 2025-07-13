@@ -10,8 +10,8 @@ const About = () => {
           <p className="text-white"> A recent BSc. in Information Technology graduate from Concordia University of Edmonton, with a minor in Mathematics and a passion for building impactful web solutions. </p>
           <div>
             <br />
-            <h2 className="text-3xl font-semibold mb-4">Skills Toolbox 🛠️</h2>
-            <ul className='text-white'>
+            <h2 className="text-3xl font-semibold mb-4 ">Skills Toolbox 🛠️</h2>
+            <ul className='text-white pl-0 text-center' >
               <li><strong> Python | Java | C++ | JavaScript | PHP </strong></li>
               <li><strong> React.js | Next.js | Express.js | Bootstrap | Tailwind CSS | jQuery | Shadcn UI </strong></li>
               <li> <strong>MongoDB | MySQL | AWS ☁️ | Vercel | Firebase</strong></li>
@@ -22,7 +22,7 @@ const About = () => {
           <br />
 
           <p className='text-white'>What sets me apart? Beyond my technical skills, I&apos;m a quick learner 🚀, effective communicator, and enthusiastic collaborator. I&apos;m deeply passionate about applying my knowledge to projects that demand innovative solutions and deliver meaningful impact 💥.</p>
-          <br />
+          <br /> 
           <p className='text-white'>💬 Let&apos;s connect and create something impactful together! 💡</p>
         </div>
         <div className="about-image-container max-w-[200px] relative">
