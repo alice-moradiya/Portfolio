@@ -7,7 +7,7 @@ const Header = () => {
         <Navbar fixed="top" collapseOnSelect expand="lg" className="z-10 bg-black border-none shadow-none font-sans font-normal text-lg pl-10 lg:pl-10">
             <Container className="lg:ml-10">
                 <Navbar.Brand href="#home" className="pr-10 md:pr-28"> 
-                    <img src="/logo.png" className="h-18 mr-2.5 align-top" alt="Logo"/>
+                    <img src="/logo.png" className="h-14 mr-2.5 align-top" alt="Logo"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ filter: 'invert(100%)' }} />
                 <Navbar.Collapse id="responsive-navbar-nav">

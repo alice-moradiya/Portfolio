@@ -38,7 +38,7 @@ const skills = {
 const Skills = () => {
     return (
         <section id='skills' className="bg-dark-section text-white py-8">
-          <h2 className="text-center text-3xl font-bold my-5">Skills & Abilities</h2>
+          <h2  className="text-center text-3xl font-bold my-5">Skills & <span className="text-indigo-600" >Technologies </span></h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 px-5">
             {Object.entries(skills).flatMap(([category, skillList]) =>
               skillList.map(skill => (
