@@ -305,7 +305,7 @@ body {
 @media (max-width: 480px) {
   .about-container {
     /* padding: 0px; */
-    height: 774px;
+    height: 700px;
     margin-right: 85px;
     max-width: 400px;
     margin-left: 85px;
@@ -327,6 +327,7 @@ body {
     /* padding-top: 190px; */
     max-width: 190px;
     margin-left: 20px;
+    border: 1px solid #ffffffa6;
   }
   .university-logo-container {
     /* padding-top: 150px; */
@@ -711,3 +712,4 @@ footer .animate-fade-in-up {
   background-color: #8700fcd8;
   transition: background-color 0.3s;
 }
+

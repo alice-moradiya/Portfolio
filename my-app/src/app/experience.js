@@ -4,20 +4,26 @@ import React, { useEffect, useRef } from 'react';
 const experiences = [
   {
     id: 1,
+    title: "Tinker Solution",
+    position: "Software Developer",
+    date: "May 2025 - Present",
+  },
+  {
+    id: 2,
     title: "Grey-box",
     position: "Web Developer",
     date: "January 2024 - August 2024",
   },
   {
-    id: 2,
-    title: "AJ Infosoft",
-    position: "Web Developer",
-    date: "February 2023 - September 2023",
+    id: 3,
+    title: "SwiftLayer Labs",
+    position: "Software Developer",
+    date: "September 2022 - September 2023",
   },
   {
-    id: 3,
-    title: "Techeshta",
-    position: "Web Developer",
+    id: 4,
+    title: "AJ Infosoft",
+    position: "Software Developer",
     date: "May 2022 – September 2022",
   },
 

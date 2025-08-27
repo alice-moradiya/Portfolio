@@ -16,20 +16,20 @@ const projects = [
     codeLink: "https://github.com/alice-moradiya/Portfolio"
   },
 
-  {
-    name: "React.js Project",
-    description: "Built with React.js: State management, component-based architecture.Designed for functionality: Custom hooks, event handling. UI/UX focus: Responsive design, interactive elements.",
-    imageUrl: "/reactpro2.png",
-    viewLink: "https://reactcalculator22.netlify.app/",
-    codeLink: "https://github.com/alice-moradiya/React.js-project"
-  },
-  {
-    name: "SortMaster - Interactive Sorting Algorithm",
-    description: "Front-end development: HTML, CSS, JavaScript. Implemented & optimized sorting algorithms ( Bubble, Insertion, Merge, Quick). User-centric design, interactive UX/UI.",
-    imageUrl: "/sortmaster.png",
-    viewLink: "https://sortmaster007.netlify.app/",
-    codeLink: "https://github.com/alice-moradiya/SortMaster"
-  },
+  // {
+  //   name: "React.js Project",
+  //   description: "Built with React.js: State management, component-based architecture.Designed for functionality: Custom hooks, event handling. UI/UX focus: Responsive design, interactive elements.",
+  //   imageUrl: "/reactpro2.png",
+  //   viewLink: "https://reactcalculator22.netlify.app/",
+  //   codeLink: "https://github.com/alice-moradiya/React.js-project"
+  // },
+  // {
+  //   name: "SortMaster - Interactive Sorting Algorithm",
+  //   description: "Front-end development: HTML, CSS, JavaScript. Implemented & optimized sorting algorithms ( Bubble, Insertion, Merge, Quick). User-centric design, interactive UX/UI.",
+  //   imageUrl: "/sortmaster.png",
+  //   viewLink: "https://sortmaster007.netlify.app/",
+  //   codeLink: "https://github.com/alice-moradiya/SortMaster"
+  // },
 
   {
     name: "AI-Finance-Advisor",
@@ -39,13 +39,13 @@ const projects = [
     codeLink: "https://github.com/alice-moradiya/Automated-Personal-Finance-Advisor-IT452-capstone-project"
   },
 
-  {
-    name: "Restaurant Website",
-    description: "Front-end development: Bootstrap, jQuery, CSS for responsive design. Crafted engaging UI/UX: Menu navigation",
-    imageUrl: "/restweb.png",
-    viewLink: "https://poutineparadise.netlify.app/ ",
-    codeLink: "https://github.com/alice-moradiya/IT-202-Restaurant-website-project"
-  },
+  // {
+  //   name: "Restaurant Website",
+  //   description: "Front-end development: Bootstrap, jQuery, CSS for responsive design. Crafted engaging UI/UX: Menu navigation",
+  //   imageUrl: "/restweb.png",
+  //   viewLink: "https://poutineparadise.netlify.app/ ",
+  //   codeLink: "https://github.com/alice-moradiya/IT-202-Restaurant-website-project"
+  // },
 
 
 ];

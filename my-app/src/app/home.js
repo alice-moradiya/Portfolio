@@ -39,7 +39,7 @@ const HomePageContent = () => {
       <h2 className="text-[32px] hidden sm:block "> <img src="/Web-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo" /> Web Developer |
         <img src="/Soft-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo" /> Software Developer</h2>
       <br />
-      <p>⚡ Dynamic Web Developer with a track record of driving user adoption and enhancing software functionality.</p>
+      <p>⚡ Dynamic Software Developer with a track record of driving user adoption and enhancing software functionality.</p>
       <p>Proficient in Web development 🖥️ and database management 📊 with a strong foundation in teamwork.</p>
       <p>🔍 Skilled in problem-solving to deliver effective solutions.</p>
       <div id="infobuttons"><LinkedIn />
