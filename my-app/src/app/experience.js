@@ -69,7 +69,7 @@ const ExperiencePage = () => {
         {experiences.map((exp, index) => (
           <div ref={addToRefs} key={exp.id} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
             <div className="timeline-content">
-              <h3 className="max-w-full break-words">{exp.title}</h3>
+              <h3 className="max-w-full break-words font-bold text-2xlg ">{exp.title}</h3>
               <p>{exp.position}</p>
               <p>{exp.date}</p>
             </div>

@@ -11,7 +11,7 @@ const education = () => {
                 <img src="/Concordia.png" alt="Concordia University of Edmonton" className="university-logo" />
             </div>
             <div className="education-info">
-                <p>🎓 <strong>Education is not just about learning facts, but about training the mind to think.</strong></p>
+                {/* <p>🎓 <strong>Education is not just about learning facts, but about training the mind to think.</strong></p> */}
                 <h3>BSc. in Information Technology | 2020 – 2024</h3>
                 <p><strong>Major:</strong> Information Technology 🖥️ | <strong>Minor:</strong> Mathematics 🔢</p>
                 <p><strong>Relevant Courses:</strong> Software Development, Web Development, Database Management, Networking, Cybersecurity, Business, Economics</p>

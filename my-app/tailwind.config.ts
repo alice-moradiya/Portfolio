@@ -9,6 +9,10 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'sans': ['Poppins', 'sans-serif'],
+      },
       animation: {
         shimmer: "shimmer 2s linear infinite",
       },

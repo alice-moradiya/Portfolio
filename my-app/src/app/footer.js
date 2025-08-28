@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-center">
           <div className="w-full md:w-1/3 text-center md:text-left">
             <h2 className="text-2xl font-bold">Alice&apos;s Portfolio</h2>
-            <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+            <p>Thank you for visiting my personal portfolio website. Feel free to connect with me over socials.</p>
             <p>Keep Rising 🚀.</p>
           </div>
           <div className="w-full md:w-1/3 text-center">
@@ -16,9 +16,10 @@ const Footer = () => {
               <ul>
                 <li><a href="#home" className="hover:underline">Home</a></li>
                 <li><a href="#about" className="hover:underline">About</a></li>
-                <li><a href="#Education" className="hover:underline">Education</a></li>
+                {/* <li><a href="#Education" className="hover:underline">Education</a></li> */}
+                <li><a href="#Experience" className="hover:underline">Experience</a></li>
                 <li><a href="#skills" className="hover:underline">Skills</a></li>
-                {/* <li><a href="#Experience" className="hover:underline">Experience</a></li> */}
+
                 <li><a href="#projects" className="hover:underline">Projects</a></li>
               </ul>
             </nav>
@@ -32,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div  className="credit border-t border-gray-700 text-center py-8">
+        <div className="credit border-t border-gray-700 text-center py-8">
           <p> Developed by Alice Moradiya </p>
         </div>
       </div>

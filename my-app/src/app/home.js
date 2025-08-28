@@ -39,9 +39,9 @@ const HomePageContent = () => {
       <h2 className="text-[32px] hidden sm:block "> <img src="/Web-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo" /> Web Developer |
         <img src="/Soft-img.png" width="35" height="35" className="d-inline-block align-top" alt="Logo" /> Software Developer</h2>
       <br />
-      <p>⚡ Dynamic Software Developer with a track record of driving user adoption and enhancing software functionality.</p>
-      <p>Proficient in Web development 🖥️ and database management 📊 with a strong foundation in teamwork.</p>
-      <p>🔍 Skilled in problem-solving to deliver effective solutions.</p>
+      <p>⚡ Dynamic Software Engineer focused on building reliable, user-friendly applications that make an impact.</p>
+      <p>Proficient in Web development and database management 📊 with a strong foundation in teamwork.</p>
+      <p>Skilled in problem-solving and delivering effective solutions 🎯</p>
       <div id="infobuttons"><LinkedIn />
         {/* Contact Me button */}
         <a href='mailto:alice.moradiya@gmail.com' id="bordermagic" className="no-underline relative inline-flex h-12 overflow-hidden rounded-full p-0.5 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
