@@ -65,9 +65,13 @@ body {
   height: 75px;
   width: auto;
   /* margin-right: 534px; */
+  transition: all 0.3s ease;
 }
 
-.nav-link.active,
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
 .nav-link:hover {
   color: #dddddd;
   text-decoration: none;
@@ -102,11 +106,35 @@ body {
   }
 }
 
-/* Ensure navbar stays solid black */
+/* Ensure navbar stays solid black with enhanced styling */
 .navbar {
   background-color: #000000 !important;
   border-bottom: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  --bs-navbar-color: rgba(255,255,255,.9);
+  --bs-navbar-hover-color: #fff;
+}
+
+
+
+/* Cool navbar entrance animation */
+@keyframes navbarEntrance {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: navbarEntrance 0.8s ease-out forwards;
 }
 .Nav {
   justify-content: flex-end;
@@ -187,9 +215,8 @@ body {
 
 @media (max-width: 1024px) {
   #home {
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 163px;
-    justify-content: center;
   }
   #infobuttons {
     justify-content: center;
@@ -198,24 +225,10 @@ body {
 
 @media (max-width: 768px) {
   #home {
-    padding-top: 180px;
+    padding-top: 100px;
     padding-bottom: 163px;
-    justify-content: center;
     width: 100%;
   }
-  #home h1 {
-    font-size: 36px;
-  }
-
-  #home h2,
-  #home h3 {
-    font-size: 20px;
-  }
-
-  #home p {
-    font-size: 14px;
-  }
-
   #infobuttons {
     flex-direction: row;
     justify-content: center;
@@ -231,23 +244,9 @@ body {
     width: 100%;
     padding-bottom: 163px;
   }
-  #home h1 {
-    font-size: 28px;
-  }
-
-  #home h2,
-  #home h3 {
-    font-size: 18px;
-  }
-
-  #home p {
-    font-size: 12px;
-  }
-
   #home {
-    padding-top: 344px;
+    padding-top: 120px;
     padding-bottom: 163px;
-    justify-content: center;
     width: 100%;
     height: 100vh;
   }
@@ -846,7 +845,7 @@ footer .animate-fade-in-up {
   left: 0;
 }
 
-/* Active state */
+/* Active state - consolidated */
 .nav-link.underline::after,
 .nav-link.active::after {
   left: 0;
@@ -857,12 +856,7 @@ footer .animate-fade-in-up {
   left: 0;
 }
 
-.nav-link.active {
-  color: #e0e7ff !important;
-  text-shadow: 0 0 15px rgba(135, 0, 252, 0.6);
-}
-
-/* Pulse animation for active link */
+/* Enhanced pulse animation for active link */
 @keyframes navPulse {
   0%, 100% {
     box-shadow: 0 0 0 0 rgba(135, 0, 252, 0.4);
@@ -872,8 +866,389 @@ footer .animate-fade-in-up {
   }
 }
 
+/* Consolidated active state with all effects */
 .nav-link.active {
+  color: #e0e7ff !important;
+  text-shadow: 0 0 15px rgba(135, 0, 252, 0.6);
+  transform: translateY(-2px);
+  letter-spacing: 0.5px;
   animation: navPulse 2s infinite;
+}
+
+/* Glow effect for active link */
+.nav-link.active::before {
+  box-shadow: 0 0 15px rgba(135, 0, 252, 0.8), 0 0 30px rgba(135, 0, 252, 0.4);
+}
+
+/* Ensuring only one element can be active - override any conflicting styles */
+.nav-link:not(.active) {
+  color: white !important;
+  text-shadow: none !important;
+  transform: none !important;
+  letter-spacing: normal !important;
+  animation: none !important;
+}
+
+.nav-link:not(.active)::before {
+  box-shadow: none !important;
+  left: -100% !important;
+}
+
+.nav-link:not(.active)::after {
+  left: -100% !important;
+}
+
+/* Force reset for any conflicting active states */
+.nav-link:not(.active).active {
+  color: white !important;
+  text-shadow: none !important;
+  transform: none !important;
+  letter-spacing: normal !important;
+  animation: none !important;
+}
+
+/* Cool entrance animation for nav links */
+@keyframes navLinkEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-link {
+  animation: navLinkEntrance 0.6s ease-out forwards;
+}
+
+/* Stagger the entrance animation for each nav link */
+.nav-link:nth-child(1) { animation-delay: 0.1s; }
+.nav-link:nth-child(2) { animation-delay: 0.2s; }
+.nav-link:nth-child(3) { animation-delay: 0.3s; }
+.nav-link:nth-child(4) { animation-delay: 0.4s; }
+
+/* Cool Mobile Burger Menu Styles - Complete Override */
+.navbar-toggler {
+  border: none !important;
+  padding: 0.5rem !important;
+  background: transparent !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Complete override of Bootstrap's burger icon */
+.navbar-toggler-icon,
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none !important;
+  background: transparent !important;
+  position: relative !important;
+  width: 24px !important;
+  height: 18px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Create the three white lines using pseudo-elements */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 3px !important;
+  background: white !important;
+  border-radius: 2px !important;
+  left: 0 !important;
+  top: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Position the top and bottom lines */
+.navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px !important;
+}
+
+.navbar-toggler-icon::after,
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px !important;
+}
+
+/* Create the middle line using the main element */
+.navbar-toggler-icon,
+.navbar-toggler .navbar-toggler-icon {
+  background: white !important;
+  height: 3px !important;
+  width: 24px !important;
+}
+
+/* Animated rectangle lines around burger button */
+.navbar-toggler::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  /* border: 0.2px solid white; */
+  border-radius: 8px;
+  background: linear-gradient(90deg, #8600fc5e, #3b83f672);
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  animation: burgerBorderPulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes burgerBorderPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* Hover effects for burger */
+.navbar-toggler:hover::before {
+  animation: burgerBorderPulse 1s infinite;
+  box-shadow: 0 0 15px rgba(135, 0, 252, 0.6);
+}
+
+/* Animated entrance for burger */
+@keyframes burgerEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.navbar-toggler {
+  animation: burgerEntrance 0.8s ease-out forwards;
+  animation-delay: 1s;
+}
+
+/* Active state when menu is open */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg) translate(6px, 6px);
+  background: white !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background: white !important;
+}
+
+/* Mobile menu background - black to blend with header */
+.navbar-collapse {
+  background: #000000 !important;
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+/* Ensure mobile menu links are always white */
+.navbar-collapse .nav-link {
+  color: white !important;
+}
+
+.navbar-collapse .nav-link:not(.active) {
+  color: white !important;
+}
+
+/* Override Bootstrap's default navbar link colors */
+.navbar .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link {
+  color: white !important;
+}
+
+/* Most aggressive override for Bootstrap's default styles */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-collapse .navbar-nav .nav-link,
+.navbar .navbar-collapse .nav-link {
+  color: white !important;
+}
+
+/* Force override any Bootstrap or conflicting styles for mobile menu */
+.navbar-collapse .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover {
+  color: #e0e7ff !important;
+}
+
+.navbar-collapse .navbar-nav .nav-link.active {
+  color: #e0e7ff !important;
+}
+
+/* Additional specificity for mobile menu */
+@media (max-width: 991px) {
+  .navbar-collapse .navbar-nav .nav-link,
+  .navbar-collapse .nav-link {
+    color: white !important;
+  }
+  
+  /* Override Bootstrap's default mobile navbar styles */
+  .navbar .navbar-collapse .navbar-nav .nav-link,
+  .navbar .navbar-collapse .nav-link {
+    color: white !important;
+  }
+  
+  /* Most specific override for Bootstrap mobile styles */
+  .navbar .navbar-collapse .navbar-nav .nav-link,
+  .navbar .navbar-collapse .nav-link,
+  .navbar-collapse .navbar-nav .nav-link,
+  .navbar-collapse .nav-link {
+    color: white !important;
+  }
+}
+
+/* Force reset active states for mobile menu */
+@media (max-width: 991px) {
+  .navbar-collapse .nav-link:not(.active) {
+    color: white !important;
+    text-shadow: none !important;
+    transform: none !important;
+    letter-spacing: normal !important;
+    animation: none !important;
+  }
+  
+  .navbar-collapse .nav-link:not(.active)::before {
+    box-shadow: none !important;
+    left: -100% !important;
+  }
+  
+  .navbar-collapse .nav-link:not(.active)::after {
+    left: -100% !important;
+  }
+}
+
+/* Ensure ALL mobile menu links are white by default */
+@media (max-width: 991px) {
+  .navbar-collapse .nav-link,
+  .navbar-collapse .navbar-nav .nav-link,
+  .navbar-collapse a.nav-link,
+  .navbar-light .navbar-nav .nav-link,
+  .navbar-light .navbar-collapse .nav-link,
+  .navbar-light .navbar-collapse .navbar-nav .nav-link,
+  .navbar-light .navbar-collapse .navbar-nav .nav-link:not(.active),
+  .navbar-light .navbar-collapse .nav-link:not(.active),
+  .navbar-collapse .navbar-nav .nav-link:not(.active),
+  .navbar-collapse .nav-link:not(.active),
+  /* Target Bootstrap's default navbar classes */
+  .navbar .navbar-nav .nav-link,
+  .navbar .navbar-collapse .nav-link,
+  .navbar .navbar-collapse .navbar-nav .nav-link,
+  /* Override Tailwind text classes specifically */
+  .navbar-collapse .nav-link.text-white,
+  .navbar-collapse .navbar-nav .nav-link.text-white,
+  .navbar-light .navbar-collapse .nav-link.text-white,
+  .navbar-light .navbar-collapse .navbar-nav .nav-link.text-white,
+  .navbar-collapse .nav-link.text-black,
+  .navbar-collapse .navbar-nav .nav-link.text-black,
+  .navbar-light .navbar-collapse .nav-link.text-black,
+  .navbar-light .navbar-collapse .navbar-nav .nav-link.text-black,
+  /* Target any Bootstrap default text colors */
+  .navbar .navbar-collapse .nav-link,
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  /* Only change color on hover or active */
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .navbar-nav .nav-link:hover,
+  .navbar-collapse .nav-link.active,
+  .navbar-collapse .navbar-nav .nav-link.active,
+  .navbar-light .navbar-collapse .nav-link:hover,
+  .navbar-light .navbar-collapse .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-collapse .nav-link.active,
+  .navbar-light .navbar-collapse .navbar-nav .nav-link.active,
+  .navbar .navbar-collapse .nav-link:hover,
+  .navbar .navbar-collapse .navbar-nav .nav-link:hover,
+  .navbar .navbar-collapse .nav-link.active,
+  .navbar .navbar-collapse .navbar-nav .nav-link.active {
+    color: #e0e7ff !important;
+  }
+}
+
+/* Mobile nav links animation */
+@media (max-width: 991px) {
+  .navbar-collapse .nav-link {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: mobileNavEntrance 0.5s ease-out forwards;
+    color: white !important;
+    text-decoration: none;
+  }
+  
+  .navbar-collapse .nav-link:hover {
+    color: #e0e7ff !important;
+  }
+  
+  /* Force override for all mobile menu links */
+.navbar-collapse .nav-link,
+.navbar-collapse .navbar-nav .nav-link,
+.navbar-light .navbar-collapse .nav-link,
+.navbar-light .navbar-collapse .navbar-nav .nav-link,
+/* Target Bootstrap's default navbar classes */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-collapse .nav-link,
+.navbar .navbar-collapse .navbar-nav .nav-link,
+/* Override Tailwind text classes for mobile menu */
+.navbar-collapse .nav-link.text-white,
+.navbar-collapse .navbar-nav .nav-link.text-white,
+.navbar-light .navbar-collapse .nav-link.text-white,
+.navbar-light .navbar-collapse .navbar-nav .nav-link.text-white,
+/* Override Bootstrap's default text colors */
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-collapse .nav-link,
+.navbar .navbar-collapse .navbar-nav .nav-link {
+  color: white !important;
+}
+  
+  .navbar-collapse .nav-link:nth-child(1) { animation-delay: 0.1s; }
+  .navbar-collapse .nav-link:nth-child(2) { animation-delay: 0.2s; }
+  .navbar-collapse .nav-link:nth-child(3) { animation-delay: 0.3s; }
+  .navbar-collapse .nav-link:nth-child(4) { animation-delay: 0.4s; }
+  .navbar-collapse .nav-link:nth-child(5) { animation-delay: 0.5s; }
+}
+
+@keyframes mobileNavEntrance {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Responsive adjustments */
@@ -885,6 +1260,11 @@ footer .animate-fade-in-up {
   
   .nav-link:hover {
     transform: translateY(-1px);
+  }
+  
+  /* Enhanced mobile burger positioning */
+  .navbar-toggler {
+    margin-right: 1rem;
   }
 }
 

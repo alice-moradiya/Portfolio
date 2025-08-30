@@ -5,27 +5,25 @@ const About = () => {
     <div id="about">
       <div className="about-container flex items-center justify-center text-white bg-[rgba(255,255,255,0.137)]">
         <div className="about-content relative z-1 text-center">
-          <h1 className="text-[42px] font-extrabold text-white  animate-fill-word" > About Me</h1>
+          <h1 className="text-[42px] font-extrabold text-white animate-fill-word">About Me</h1>
           <br/>
-          {/* <p className="text-white">👋 Hi, I am Alice  🌟</p> */}
-          <p className="text-white"> I&apos;m a software developer with a BSc. in Information Technology from Concordia University of Edmonton and hands-on experience through freelance projects and multiple companies. I&apos;ve built full-stack applications, Chrome extensions, and WordPress solutions using React, Next.js, PHP, MySQL, and more. </p>
-          {/* <div>
-            <h2 className="text-3xl font-semibold mb-4 ">Skills  Toolbox 🛠️</h2>
-            <ul className='text-white pl-0 text-center' >
-              <li><strong> Python | Java | C++ | JavaScript | PHP </strong></li>
-              <li><strong> React.js | Next.js | Express.js | Bootstrap | Tailwind CSS | jQuery | Shadcn UI </strong></li>
-              <li> <strong>MongoDB | MySQL | AWS ☁️ | Vercel | Firebase</strong></li>
-              <li> <strong> Git | GitHub | Jira | Postman | VS Code | WordPress | Docker (basic)</strong></li>
-              <li> <strong>OpenAI API | GitHub Copilot | Pytorch | TensorFlow | Prompt Engineering</strong></li>
+          <p className="text-white">I&apos;m a passionate software developer with a BSc. in Information Technology from Concordia University of Edmonton. My journey in tech has been driven by curiosity and a desire to create meaningful solutions.</p>
+          <br/>
+          <p className="text-white">Throughout my career, I&apos;ve had the opportunity to work on diverse projects - from full-stack web applications to Chrome extensions and WordPress solutions. I&apos;ve collaborated with multiple companies and freelanced, gaining hands-on experience with modern technologies like React, Next.js, PHP, MySQL, and more.</p>
+          <br/>
+          <div>
+            <h2 className="text-3xl font-semibold mb-4">My Approach 🎯</h2>
+            <ul className='text-white pl-0 text-center'>
+              <li><strong>Problem-Solving First:</strong> I believe in understanding the core problem before diving into solutions</li>
+              <li><strong>Clean & Scalable Code:</strong> Writing maintainable code that grows with your business</li>
+              <li><strong>User-Centric Design:</strong> Creating experiences that users love to interact with</li>
+              <li><strong>Continuous Learning:</strong> Staying updated with the latest technologies and best practices</li>
             </ul> 
-          </div>*/}
+          </div>
           <br/>
-          <p className='text-white'> I focus on creating clean, scalable, and user-friendly web solutions, combining strong technical skills with clear communication and teamwork.</p>
+          <p className='text-white'>When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
           <br/>
           <p className='text-white'>💬 Let&apos;s connect and create something impactful together! 💡</p>
-        </div>
-        <div className="about-image-container max-w-[200px] relative">
-          <img className="about-image" src={"/profile.png"} alt="[Alice photo]" />
         </div>
       </div>
     </div>

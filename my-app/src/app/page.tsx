@@ -34,7 +34,7 @@ const Page = () => {
       <Header />
       <WavyBackground />
       <HomePageContent />
-      <About />
+      {/* <About /> */}
       {/* <Education/> */}
       <Experience />
       <Skills />

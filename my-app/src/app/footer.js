@@ -14,8 +14,8 @@ const Footer = () => {
             <h2 className="text-2xl font-bold">Quick Links</h2>
             <nav>
               <ul>
-                <li><a href="#home" className="hover:underline">Home</a></li>
-                <li><a href="#about" className="hover:underline">About</a></li>
+                <li><a href="#home" className="hover:underline">Profile</a></li>
+                {/* <li><a href="#about" className="hover:underline">About</a></li> */}
                 {/* <li><a href="#Education" className="hover:underline">Education</a></li> */}
                 <li><a href="#Experience" className="hover:underline">Experience</a></li>
                 <li><a href="#skills" className="hover:underline">Skills</a></li>
