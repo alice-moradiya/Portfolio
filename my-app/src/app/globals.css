@@ -487,6 +487,29 @@ body {
     padding-top: 120px;
     padding-bottom: 250px;
   }
+@media (max-width: 375px) {
+  #infobuttons {
+    margin-bottom: 60px; /* Adds space below the social buttons */
+  }
+  
+  /* If you want to add space above the Experience section */
+  #Experience {
+    margin-top: 40px;
+  }
+  #home h3 {
+    font-size: 16px; /* Smaller font size for mobile */
+    line-height: 1.4; /* Better line height for mobile */
+  }
+}
+@media (max-width: 375px) {
+  #infobuttons {
+    margin-bottom: 60px; /* Adds space below the social buttons */
+  }
+  
+  #Experience {
+    margin-top: 150px;
+  }
+}
 }
 .experience-container {
   padding: 20px;
@@ -909,11 +932,12 @@ footer .animate-fade-in-up {
 
 /* Ensuring only one element can be active - override any conflicting styles */
 .nav-link:not(.active) {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.8) !important;
   text-shadow: none !important;
   transform: none !important;
   letter-spacing: normal !important;
   animation: none !important;
+  transition: all 0.3s ease;
 }
 
 .nav-link:not(.active)::before {
@@ -927,11 +951,24 @@ footer .animate-fade-in-up {
 
 /* Force reset for any conflicting active states */
 .nav-link:not(.active).active {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.8) !important;
   text-shadow: none !important;
   transform: none !important;
   letter-spacing: normal !important;
   animation: none !important;
+}
+
+/* Enhanced visibility for all nav links */
+.nav-link {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for non-active links */
+.nav-link:not(.active):hover {
+  color: rgba(255, 255, 255, 0.95) !important;
+  transform: translateY(-1px);
 }
 
 /* Cool entrance animation for nav links */
@@ -1160,11 +1197,12 @@ footer .animate-fade-in-up {
 /* Force reset active states for mobile menu */
 @media (max-width: 991px) {
   .navbar-collapse .nav-link:not(.active) {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.8) !important;
     text-shadow: none !important;
     transform: none !important;
     letter-spacing: normal !important;
     animation: none !important;
+    transition: all 0.3s ease;
   }
   
   .navbar-collapse .nav-link:not(.active)::before {
@@ -1175,9 +1213,22 @@ footer .animate-fade-in-up {
   .navbar-collapse .nav-link:not(.active)::after {
     left: -100% !important;
   }
+  
+  /* Enhanced visibility for mobile nav links */
+  .navbar-collapse .nav-link {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for mobile non-active links */
+  .navbar-collapse .nav-link:not(.active):hover {
+    color: rgba(255, 255, 255, 0.95) !important;
+    transform: translateY(-1px);
+  }
 }
 
-/* Ensure ALL mobile menu links are white by default */
+/* Ensure ALL mobile menu links are visible by default */
 @media (max-width: 991px) {
   .navbar-collapse .nav-link,
   .navbar-collapse .navbar-nav .nav-link,
@@ -1205,7 +1256,7 @@ footer .animate-fade-in-up {
   /* Target any Bootstrap default text colors */
   .navbar .navbar-collapse .nav-link,
   .navbar .navbar-collapse .navbar-nav .nav-link {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.8) !important;
   }
   
   /* Only change color on hover or active */

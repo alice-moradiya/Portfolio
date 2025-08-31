@@ -11,6 +11,51 @@ const Header = () => {
         setActivePage('home');
     }, []);
 
+    // Scroll-based navigation logic
+    useEffect(() => {
+        const sections = [
+            { id: 'home', name: 'home' },
+            { id: 'Experience', name: 'experience' },
+            { id: 'skills', name: 'skills' },
+            { id: 'projects', name: 'projects' }
+        ];
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // Adjust these values to control when a section is considered "active"
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const sectionName = sections.find(section => section.id === entry.target.id)?.name;
+                    if (sectionName) {
+                        setActivePage(sectionName);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        sections.forEach((section) => {
+            const element = document.getElementById(section.id);
+            if (element) {
+                observer.observe(element);
+            }
+        });
+
+        // Cleanup observer on unmount
+        return () => {
+            sections.forEach((section) => {
+                const element = document.getElementById(section.id);
+                if (element) {
+                    observer.unobserve(element);
+                }
+            });
+        };
+    }, []);
+
     const handleNavClick = (page) => {
         setActivePage(page);
     };
